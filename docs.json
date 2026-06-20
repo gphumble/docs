@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
-  "name": "Product Guide",
-  "description": "Step-by-step guides for every product—platform setup, analytics, and integrations in one place.",
+  "name": "Advocora Help Center",
+  "description": "Guides and how-tos for Advocora — the advocacy CRM for nonprofits. Manage contacts, gifts, email campaigns, forms, and more.",
   "colors": {
     "primary": "#166E3F",
     "light": "#26BD6C",
@@ -39,39 +39,18 @@
       ]
     },
     "directory": "card",
-    "groups": [
+    "pages": [
+      "index.mdx",
       {
-        "group": "Platform",
-        "icon": "layers",
-        "expanded": true,
+        "group": "Contacts",
+        "icon": "users",
         "pages": [
-          "platform/quickstart",
-          "platform/key-concepts",
-          "platform/configuration/settings",
-          "platform/configuration/user-management",
-          "platform/administration/roles-permissions"
-        ]
-      },
-      {
-        "group": "Analytics",
-        "icon": "chart-bar",
-        "expanded": true,
-        "pages": [
-          "analytics/quickstart",
-          "analytics/connect-data",
-          "analytics/dashboards/create-dashboard",
-          "analytics/reports/scheduled-reports"
-        ]
-      },
-      {
-        "group": "Integrations",
-        "icon": "plug",
-        "expanded": true,
-        "pages": [
-          "integrations/quickstart",
-          "integrations/authentication",
-          "integrations/connectors/crm",
-          "integrations/webhooks/configure"
+          "contacts/overview.mdx",
+          "contacts/find-contacts.mdx",
+          "contacts/add-a-contact.mdx",
+          "contacts/manage-a-contact.mdx",
+          "contacts/donor-status.mdx",
+          "contacts/bulk-actions.mdx"
         ]
       }
     ]
@@ -84,14 +63,14 @@
     "links": [],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open Advocora",
+      "href": "https://app.advocora.io"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/yourcompany",
-      "linkedin": "https://linkedin.com/company/yourcompany"
+      "x": "https://x.com/advocora",
+      "linkedin": "https://linkedin.com/company/advocora"
     }
   }
 }
