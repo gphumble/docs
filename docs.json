@@ -25,39 +25,29 @@
           "anchor": "Home",
           "icon": "house",
           "href": "/"
-        },
-        {
-          "anchor": "Changelog",
-          "icon": "scroll-text",
-          "href": "https://www.mintlify.com/docs/changelog"
-        },
-        {
-          "anchor": "Help",
-          "icon": "life-buoy",
-          "href": "https://www.mintlify.com/docs/contact-support"
         }
       ]
     },
     "directory": "card",
     "pages": [
-      "index.mdx",
+      "index",
       {
         "group": "Contacts",
         "icon": "users",
         "pages": [
-          "contacts/overview.mdx",
-          "contacts/find-contacts.mdx",
-          "contacts/add-a-contact.mdx",
-          "contacts/manage-a-contact.mdx",
-          "contacts/donor-status.mdx",
-          "contacts/bulk-actions.mdx"
+          "contacts/overview",
+          "contacts/find-contacts",
+          "contacts/add-a-contact",
+          "contacts/manage-a-contact",
+          "contacts/donor-status",
+          "contacts/bulk-actions"
         ]
       }
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNTAgMjgiPjx0ZXh0IHg9IjAiIHk9IjIxIiBmb250LWZhbWlseT0iR2VvcmdpYSwgdWktc2VyaWYsIHNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iNzAwIiBsZXR0ZXItc3BhY2luZz0iLTAuMyIgZmlsbD0iIzE2NkUzRiI+QWR2b2NvcmE8L3RleHQ+PC9zdmc+",
+    "dark": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNTAgMjgiPjx0ZXh0IHg9IjAiIHk9IjIxIiBmb250LWZhbWlseT0iR2VvcmdpYSwgdWktc2VyaWYsIHNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iNzAwIiBsZXR0ZXItc3BhY2luZz0iLTAuMyIgZmlsbD0iI0ZGRkZGRiI+QWR2b2NvcmE8L3RleHQ+PC9zdmc+"
   },
   "navbar": {
     "links": [],
