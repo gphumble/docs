@@ -1,0 +1,43 @@
+---
+title: "Donor status"
+sidebarTitle: "Donor status"
+description: "How Advocora automatically labels each contact as an active donor, inactive donor, or non-donor."
+icon: "hand-heart"
+---
+
+Every contact has a **donor status** that Advocora calculates automatically from their giving history. You never set it by hand—it updates on its own as gifts are recorded.
+
+## The three statuses
+
+<CardGroup cols={3}>
+  <Card title="Active donor" icon="circle-check">
+    Has given at least one gift in the **last 12 months**.
+  </Card>
+
+  <Card title="Inactive donor" icon="circle-pause">
+    Has given before, but **not within the last 12 months**.
+  </Card>
+
+  <Card title="Non-donor" icon="circle-dashed">
+    Has **no recorded gifts** yet.
+  </Card>
+</CardGroup>
+
+## How it updates
+
+Donor status is always based on the most recent gift date:
+
+- Record a recent gift and a contact becomes an **Active donor**.
+- As time passes with no new gifts, an active donor eventually becomes **Inactive**.
+- A contact with no gifts at all is a **Non-donor** until their first gift is recorded.
+
+Because it's automatic, you don't need to maintain it manually—just keep recording gifts and the status stays accurate.
+
+## Where you'll see it
+
+- As a **badge** on each row of the contact list and on the contact's profile.
+- As a **filter** on the Contacts page, so you can focus on just active donors, lapsed (inactive) donors, or people who haven't given yet. See [Find a contact](/contacts/find-contacts).
+
+<Tip>
+  Filtering by **Inactive donor** is a quick way to build a re-engagement or lapsed-donor outreach list.
+</Tip>
