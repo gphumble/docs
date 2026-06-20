@@ -4,9 +4,9 @@
   "name": "Advocora Help Center",
   "description": "Guides and how-tos for Advocora — the advocacy CRM for nonprofits. Manage contacts, gifts, email campaigns, forms, and more.",
   "colors": {
-    "primary": "#166E3F",
-    "light": "#26BD6C",
-    "dark": "#166E3F"
+    "primary": "#D57447",
+    "light": "#E89265",
+    "dark": "#B35025"
   },
   "favicon": "/favicon.ico",
   "icons": {
@@ -19,15 +19,6 @@
     "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
   },
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Home",
-          "icon": "house",
-          "href": "/"
-        }
-      ]
-    },
     "directory": "card",
     "pages": [
       "index",
@@ -46,8 +37,8 @@
     ]
   },
   "logo": {
-    "light": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNTAgMjgiPjx0ZXh0IHg9IjAiIHk9IjIxIiBmb250LWZhbWlseT0iR2VvcmdpYSwgdWktc2VyaWYsIHNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iNzAwIiBsZXR0ZXItc3BhY2luZz0iLTAuMyIgZmlsbD0iIzE2NkUzRiI+QWR2b2NvcmE8L3RleHQ+PC9zdmc+",
-    "dark": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNTAgMjgiPjx0ZXh0IHg9IjAiIHk9IjIxIiBmb250LWZhbWlseT0iR2VvcmdpYSwgdWktc2VyaWYsIHNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iNzAwIiBsZXR0ZXItc3BhY2luZz0iLTAuMyIgZmlsbD0iI0ZGRkZGRiI+QWR2b2NvcmE8L3RleHQ+PC9zdmc+"
+    "light": "data:image/png;base64,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",
+    "dark": "data:image/png;base64,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"
   },
   "navbar": {
     "links": [],
@@ -61,6 +52,20 @@
     "socials": {
       "x": "https://x.com/advocora",
       "linkedin": "https://linkedin.com/company/advocora"
+    }
+  },
+  "background": {
+    "color": {
+      "light": "#FAF5ED",
+      "dark": "#070D17"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Newsreader"
+    },
+    "body": {
+      "family": "Inter"
     }
   }
 }
