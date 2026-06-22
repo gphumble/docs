@@ -1,0 +1,34 @@
+---
+title: "Sending domains"
+description: "Verify your own domain so campaigns and receipts come from your address—and land in inboxes, not spam."
+sidebarTitle: "Sending domains"
+icon: "globe"
+---
+
+To send email from your own address—and to keep it out of spam folders—your organization verifies a **sending domain** on the **Sending domains** page. This underpins every [campaign](/email/campaigns), receipt, and thank-you.
+
+## Adding and verifying a domain
+
+<Steps>
+  <Step title="Add the domain">
+    Choose **Add Domain** and enter the domain you send from (e.g., `yourorg.org`).
+  </Step>
+  <Step title="Add the DNS records">
+    Advocora gives you DNS records to add at your domain registrar—DKIM, return-path, and DMARC.
+  </Step>
+  <Step title="Verify">
+    Choose **Verify**. Once the records are found, the domain becomes **Active** and the DKIM / Return / DMARC checks show green.
+  </Step>
+</Steps>
+
+## The domains table
+
+Each domain shows its status (**unverified**, **pending**, or **active**), the from email, and the state of its three DNS checks. Choose **Set Default** to make one the default sender, and use the settings icon to adjust a domain.
+
+<Note>
+  DNS changes can take a little while to propagate. If verification doesn't pass immediately, give it some time and choose **Verify** again.
+</Note>
+
+<Tip>
+  Getting all three checks (DKIM, return-path, DMARC) green is the single biggest thing you can do for deliverability. It's worth getting right before a big send.
+</Tip>

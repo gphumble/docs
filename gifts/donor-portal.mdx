@@ -1,0 +1,46 @@
+---
+title: "The donor self-service portal"
+description: "A secure link that lets donors change their recurring gift amount, update their card, or cancel—without contacting your team."
+sidebarTitle: "Donor self-service"
+icon: "user-gear"
+---
+
+Every donor with a recurring gift can manage it themselves through a secure, private link—titled **Manage your recurring contribution**. This cuts down on support requests and gives donors control.
+
+## What donors can do
+
+<CardGroup cols={2}>
+  <Card title="Change the amount" icon="dollar-sign">
+    The new amount applies to their next charge.
+  </Card>
+
+  <Card title="Replace the card" icon="credit-card">
+    Update the payment method securely through Stripe.
+  </Card>
+
+  <Card title="Cancel" icon="circle-stop">
+    End at the close of the current billing period, or immediately.
+  </Card>
+
+  <Card title="See what's next" icon="calendar">
+    View their amount, frequency, next charge date, and card on file.
+  </Card>
+</CardGroup>
+
+## How the link works
+
+The portal opens from a private link unique to that donor—typically included in their receipt or a management email. No password is needed; the link itself is the key.
+
+<Warning>
+  The link can expire or be revoked for security. If a donor sees "This link has expired or been revoked," send them a fresh one. After several failed attempts the page pauses briefly before it can be tried again.
+</Warning>
+
+## What the donor sees after a change
+
+- **Amount updated** — "The next charge will use the new amount."
+- **Canceled at period end** — the gift keeps going until the current period ends, then stops.
+- **Canceled immediately** — the gift ends right away with no further charges.
+
+<Note>
+  Changes a donor makes here flow straight into the **Recurring** tab on your [Gifts page](/gifts/recurring-gifts), so your records stay current automatically.
+</Note>

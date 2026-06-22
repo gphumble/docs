@@ -1,0 +1,34 @@
+---
+title: "Match imported subscriptions"
+description: "Connect recurring subscriptions imported from Stripe to the right contact, turning them into recurring gifts."
+sidebarTitle: "Gifts match"
+icon: "link"
+---
+
+When you import recurring subscriptions from a Stripe Connect account, some can't be matched to a contact automatically. **Gifts match** is where you link each one and turn it into a [recurring gift](/gifts/recurring-gifts).
+
+## What you'll see
+
+A list of unmatched subscriptions, each showing when it was imported, the amount and interval, the donor's name and email, the Connect account, and the subscription's next billing date. If you have more than one Connect account, filter by account.
+
+## Matching a subscription
+
+<Steps>
+  <Step title="Select a subscription">
+    Choose **Match** on a row.
+  </Step>
+  <Step title="Pick the contact">
+    Choose from the suggested candidates (matched on email or name), or **create a new contact**.
+  </Step>
+  <Step title="Create the recurring gift">
+    Choose **Create recurring gift**. The subscription now appears in the donor's giving history and on the Recurring tab.
+  </Step>
+</Steps>
+
+<Note>
+  Nothing to match? Run a backfill from a Connect account under [Payments](/settings/payments) to populate the list.
+</Note>
+
+<Warning>
+  **Skip this subscription** marks it resolved without creating a gift—and that's permanent. Only skip subscriptions you're sure don't belong in your records.
+</Warning>

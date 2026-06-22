@@ -1,0 +1,52 @@
+---
+title: "Lists & segments"
+description: "Build audiences two ways—hand-picked lists you curate, and rule-based segments that update themselves."
+sidebarTitle: "Lists & segments"
+icon: "users"
+---
+
+Every campaign goes to an audience. Advocora gives you two kinds, on two tabs of the **Lists & segments** page.
+
+<CardGroup cols={2}>
+  <Card title="Lists" icon="list">
+    **Static.** You add and remove members yourself. Good for fixed groups—board members, a committee, event VIPs.
+  </Card>
+
+  <Card title="Segments" icon="filter">
+    **Dynamic.** Defined by rules. Membership recalculates automatically as contacts change.
+  </Card>
+</CardGroup>
+
+## Working with lists
+
+Choose **Create New List**, give it a name, and save. Open a list to see two tabs:
+
+- **Members** — search, filter by subscribed/unsubscribed, **Add Members**, or remove them.
+- **Settings** — rename, edit the description, toggle active/inactive, set public or internal, or delete.
+
+## Working with segments
+
+Choose **Create New Segment**, name it, then build the rules:
+
+<Steps>
+  <Step title="Add conditions">
+    Each condition is a **field**, an **operator**, and a **value** (for example, "State is one of CA, OR, WA").
+  </Step>
+  <Step title="Combine with AND / OR">
+    Use **AND** to require every condition, **OR** to match any.
+  </Step>
+  <Step title="Preview">
+    Choose **Preview** to see how many contacts match and a sample of who.
+  </Step>
+  <Step title="Create Segment">
+    Save it. Use **Refresh Members** anytime to recalculate.
+  </Step>
+</Steps>
+
+<Note>
+  Unsubscribed contacts are automatically excluded from every send—you never have to manage that by hand.
+</Note>
+
+<Tip>
+  Use a **list** for a known, unchanging group and a **segment** when you want the audience to keep itself current (like "gave in the last 90 days").
+</Tip>
