@@ -23,6 +23,15 @@
     "pages": [
       "index",
       {
+        "group": "Getting started",
+        "icon": "compass",
+        "pages": [
+          "getting-started/dashboard",
+          "getting-started/navigating",
+          "getting-started/your-account"
+        ]
+      },
+      {
         "group": "Contacts",
         "icon": "users",
         "pages": [
@@ -32,6 +41,96 @@
           "contacts/manage-a-contact",
           "contacts/donor-status",
           "contacts/bulk-actions"
+        ]
+      },
+      {
+        "group": "Gifts",
+        "icon": "gift",
+        "pages": [
+          "gifts/overview",
+          "gifts/record-a-gift",
+          "gifts/manage-gifts",
+          "gifts/recurring-gifts",
+          "gifts/donor-portal"
+        ]
+      },
+      {
+        "group": "Events",
+        "icon": "calendar-days",
+        "pages": [
+          "events/overview",
+          "events/create-an-event",
+          "events/ticketing",
+          "events/publish-an-event",
+          "events/registrants",
+          "events/add-ons",
+          "events/public-page-and-emails"
+        ]
+      },
+      {
+        "group": "Email marketing",
+        "icon": "envelope",
+        "pages": [
+          "email/overview",
+          "email/campaigns",
+          "email/templates",
+          "email/lists-and-segments",
+          "email/analytics",
+          "email/media-library"
+        ]
+      },
+      {
+        "group": "Forms",
+        "icon": "file-pen",
+        "pages": [
+          "forms/overview",
+          "forms/donation-forms",
+          "forms/subscribe-forms",
+          "forms/membership-forms",
+          "forms/embedding"
+        ]
+      },
+      {
+        "group": "Queries",
+        "icon": "magnifying-glass",
+        "pages": [
+          "queries/build-a-query",
+          "queries/bulk-actions"
+        ]
+      },
+      {
+        "group": "Reports",
+        "icon": "chart-column",
+        "pages": [
+          "reports/overview",
+          "reports/running-a-report",
+          "reports/exporting-and-scheduling",
+          "reports/catalog"
+        ]
+      },
+      {
+        "group": "Data management",
+        "icon": "database",
+        "pages": [
+          "data-management/overview",
+          "data-management/lookup-tables",
+          "data-management/contact-merge",
+          "data-management/subscriber-match",
+          "data-management/gifts-match",
+          "data-management/event-match"
+        ]
+      },
+      {
+        "group": "Settings & admin",
+        "icon": "gear",
+        "pages": [
+          "settings/overview",
+          "settings/organization",
+          "settings/team-and-roles",
+          "settings/payments",
+          "settings/sending-domains",
+          "settings/integrations",
+          "settings/memberships"
         ]
       }
     ]

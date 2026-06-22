@@ -1,0 +1,51 @@
+---
+title: "Edit, refund & delete gifts"
+description: "Correct a gift's details, issue a full or partial refund through Stripe, delete a gift, or export your filtered list."
+sidebarTitle: "Edit, refund & delete"
+icon: "pen-to-square"
+---
+
+The actions on the right of each gift row depend on your role. Here's what each one does.
+
+## Edit a gift
+
+Choose the **pencil** icon to change a gift's amount, date, method, designation, account, or check number. Save when you're done.
+
+## Refund a gift
+
+A **Refund** link appears only on card gifts that were charged through Stripe and haven't already been refunded.
+
+<Steps>
+  <Step title="Open the refund dialog">
+    Choose **Refund** on the gift row (or **Refund this gift** when editing).
+  </Step>
+  <Step title="Choose full or partial">
+    Pick **Full refund** for the whole amount, or **Partial refund** and enter a smaller amount (it can't exceed the original gift).
+  </Step>
+  <Step title="Pick a reason">
+    Choose **Requested by donor**, **Duplicate charge**, **Fraudulent**, or **Other**.
+  </Step>
+  <Step title="Issue refund">
+    Choose **Issue refund**. Stripe processes it and the gift updates here automatically—usually within a few seconds.
+  </Step>
+</Steps>
+
+<Note>
+  Refunds are handled by Stripe, so they only apply to card gifts paid through Advocora. Cash, check, and other manually recorded gifts can be edited or deleted, but not refunded.
+</Note>
+
+## Delete a gift
+
+Choose the **trash** icon. Because this can't be undone, you'll review a summary of the gift and must type **DELETE** to confirm.
+
+<Warning>
+  Deleting a gift is permanent. If a card gift was refunded, the refund is recorded automatically by Stripe—you don't delete a gift to refund it.
+</Warning>
+
+## Exporting gifts
+
+Choose **Export** above the table to download your gifts as **CSV** or **JSON**. The export includes every gift that matches your current filters, so filter first to get exactly the set you want.
+
+<Tip>
+  Exporting is permission-gated. If you don't see the **Export** button, ask an administrator to enable gift export for your role.
+</Tip>

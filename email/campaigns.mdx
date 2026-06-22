@@ -1,0 +1,54 @@
+---
+title: "Build & send a campaign"
+description: "Use the five-step wizard to design an email, choose recipients, test it, and send now or schedule for later."
+sidebarTitle: "Campaigns"
+icon: "paper-plane"
+---
+
+A **campaign** is a single email send to an audience. Open **Email Campaigns** and choose **New Campaign** to open the wizard.
+
+## The five steps
+
+<Steps>
+  <Step title="Basic details">
+    Name the campaign (internal only), then set the **Subject Line**, optional **Preheader Text**, **From Name**, **From Email Address**, and an optional **Reply-To**.
+  </Step>
+  <Step title="Design email">
+    Start blank or from a published [template](/email/templates), then edit with the drag-and-drop builder.
+  </Step>
+  <Step title="Select recipients">
+    Choose a **list** or a **segment**. You can also pick an **exclude segment** to remove certain contacts. Advocora shows the recipient count—always after removing unsubscribed contacts.
+  </Step>
+  <Step title="Schedule">
+    Add up to three **test email** addresses to preview the real thing, then choose **Send Immediately** or **Schedule for Later** (pick a date, time, and timezone).
+  </Step>
+  <Step title="Review">
+    Check every detail, jump back to edit anything, and confirm.
+  </Step>
+</Steps>
+
+<Warning>
+  Your **From Email Address** must use a verified sending domain, or the send will fail. See [Sending domains](/settings/sending-domains).
+</Warning>
+
+## Campaign statuses
+
+| Status | Meaning |
+| --- | --- |
+| **Draft** | Not sent yet—fully editable |
+| **Scheduled** | Queued for a future time |
+| **Sending** | Going out now |
+| **Sent** | Delivered—analytics available |
+| **Paused / Cancelled / Failed** | Stopped, called off, or errored |
+
+## Managing campaigns
+
+From the campaigns list you can **Send Now**, **Cancel Schedule**, **Duplicate**, or **Delete**:
+
+- Only **Draft** and **Scheduled** campaigns can be edited.
+- Only **Draft** and **Cancelled** campaigns can be deleted—sent campaigns are kept for your records.
+- **Duplicate** makes a fresh draft copy, handy for recurring sends.
+
+<Tip>
+  Always send yourself a test first. Scheduling? Double-check the **timezone**—the campaign sends on the timezone you pick, not your computer's.
+</Tip>

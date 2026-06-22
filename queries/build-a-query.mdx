@@ -1,0 +1,49 @@
+---
+title: "Build a query"
+description: "Find exactly the contacts, individuals, or gifts you need by combining filters—then save the query to reuse it."
+sidebarTitle: "Build a query"
+icon: "magnifying-glass"
+---
+
+**Queries** let you answer precise questions about your data—"households in Oregon who gave over \$100 last year," "individuals with no email on file," and so on. Open **Queries** in the sidebar.
+
+## Pick what you're looking for
+
+Start by choosing the **result mode**—what each row in your results represents:
+
+<CardGroup cols={3}>
+    
+</CardGroup>
+
+<Note>
+  Switching modes clears your current conditions and results, since each mode has its own set of fields.
+</Note>
+
+## Build the conditions
+
+<Steps>
+  <Step title="Add a condition">
+    Each condition is a **field**, an **operator**, and a **value**—for example, _State_ / _is one of_ / _CA, OR, WA_.
+  </Step>
+  <Step title="Combine with AND / OR">
+    Set the group logic: **AND** requires every condition; **OR** matches any. You can nest groups for more complex logic.
+  </Step>
+  <Step title="Execute">
+    Choose **Execute**, then pick which **fields** (columns) to show in your results.
+  </Step>
+  <Step title="Save (optional)">
+    Choose **Save**, name the query, and optionally **share it with your team**.
+  </Step>
+</Steps>
+
+## The kinds of filters
+
+Fields span contact info, the people in a household, contact methods (email/phone and opt-in status), addresses (down to congressional district), tags, and giving. Operators adapt to the field—text supports _contains_ and _starts with_; numbers and currency support _greater than_ and _between_; dates support _in the last N days_; tags support _has tag_ and _doesn't have tag_.
+
+## Saved queries
+
+The **Saved queries** tab lists everything you've saved. Filter by search, result mode, and ownership; click any query to load it back into the builder to run, adjust, or remove.
+
+<Tip>
+  A query is the fastest way to build a one-time list. If you want an audience that keeps itself current for email, build a [segment](/email/lists-and-segments) instead.
+</Tip>

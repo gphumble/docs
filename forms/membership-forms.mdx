@@ -1,0 +1,36 @@
+---
+title: "Membership enrollment forms"
+description: "Let supporters join a membership tier and pay online, with receipts and renewal reminders handled for you."
+sidebarTitle: "Membership forms"
+icon: "id-card"
+---
+
+Membership forms—called **Enrollment forms** in Settings—let supporters join one of your membership tiers and pay for it online.
+
+<Note>
+  Memberships is an optional module. If you don't see it under Settings, it isn't enabled for your organization. You'll also need at least one membership tier set up first.
+</Note>
+
+## Before you build
+
+Set up your **tiers** first under **Settings → Memberships**. A tier is a membership product—"Individual," "Family," "Gold"—with a price, billing interval, and optional member limit. See [Memberships](/settings/memberships).
+
+## Create a form
+
+Choose **\+ New form** under **Settings → Enrollment forms**, then pick the **Stripe Connect account**, the **tiers** to offer, branding, and receipt templates. The forms table shows each form's account, status, and number of tiers.
+
+## How members understand the terms
+
+| Term | Meaning |
+| --- | --- |
+| **Tier** | A membership product (e.g., "Family") |
+| **Membership** | One supporter's enrollment in a tier |
+| **Member** | An individual covered by a membership (a Family membership can cover several) |
+
+## Receipts and renewals
+
+Membership forms send a **Membership Receipt** on signup and on each renewal, and can send a **Membership Renewal Reminder** before a term ends. Set those up as [transactional templates](/email/templates).
+
+<Warning>
+  Like donation forms, membership forms need a ready Stripe Connect account to take payment. See [Payments](/settings/payments).
+</Warning>
