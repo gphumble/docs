@@ -11,9 +11,13 @@ icon: "magnifying-glass"
 
 Start by choosing the **result mode**—what each row in your results represents:
 
-<CardGroup cols={3}>
-    
-</CardGroup>
+| Result mode | One row represents |
+| --- | --- |
+| Contacts | A household, organization, or foundation |
+| Individuals | A person, including their contact methods |
+| Gifts | A recorded contribution |
+
+Choose Individuals for email-list actions and Contacts for household-level tags or notes.
 
 <Note>
   Switching modes clears your current conditions and results, since each mode has its own set of fields.
@@ -47,3 +51,9 @@ The **Saved queries** tab lists everything you've saved. Filter by search, resul
 <Tip>
   A query is the fastest way to build a one-time list. If you want an audience that keeps itself current for email, build a [segment](/email/lists-and-segments) instead.
 </Tip>
+
+## Check your results
+
+Start with a narrow example whose outcome you can verify. Inspect several rows after executing, then adjust the conditions. AND requires every condition in the group; OR permits any condition. Use nested groups when those rules need to be combined. Re-execute after editing conditions before using a bulk action.
+
+For no results, remove conditions one at a time and confirm the result mode. For too many results, check OR groups and whether an empty condition is broadening the query. See [Act on selected results](/queries/bulk-actions) before editing records in bulk.

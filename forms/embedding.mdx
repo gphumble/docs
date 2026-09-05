@@ -1,6 +1,35 @@
 ---
-title: "Embedding forms on your site"
-sidebarTitle: "Embedding forms"
-description: "Drop any donation, subscribe, or membership form into your own website with an auto-resizing snippet, and control which sites may embed it."
-icon: "code"
+title: "Embed a form on your website"
+description: "Publish a form, authorize your website origin, and add the generated embed code."
 ---
+
+You can embed published donation, subscribe, and membership enrollment forms in an existing website. You need access to the website editor as well as permission to edit the Advocora form.
+
+## Add the embed
+
+1. Open the saved form under **Admin Settings** and complete its setup.
+2. Under **Allowed embed origins**, enter the website origins that will host it, one per line. Use an origin such as `https://www.example.org`, without a page path. `https://example.org` and `https://www.example.org` are different origins; include both if both serve the page.
+3. Set the form to **Published** and save.
+4. Find its embed section and copy **Script (recommended)**.
+5. Paste the complete snippet into your website's custom HTML/code block at the desired location, then publish that website page.
+6. Open the website page in a signed-out browser and on a phone. Check that the full form and confirmation area remain visible as their height changes.
+
+Copy the snippet from the environment you intend to use. A snippet copied from a local development application points to that local application.
+
+## If your website restricts scripts
+
+Use the **Iframe fallback** supplied by Advocora. If the website removes the accompanying resizing script, the iframe will need an explicit height configured by your website administrator. Do not leave a zero-height iframe on the page.
+
+For donation embeds, preserve the payment permission included in the generated iframe. Do not remove attributes from the copied snippet without understanding their effect on payment methods.
+
+## Troubleshooting
+
+| Symptom | Recovery |
+| --- | --- |
+| No embed code appears | Publish and save the form first. |
+| The form is blank or refused | Check the public form link, saved status, exact allowed origin, and whether the website strips scripts or iframes. |
+| The form is cut off | Restore the complete generated snippet or have the website administrator set the fallback iframe height. |
+| Hosted form works but embed fails | Compare the actual website origin with the allowed origins, including scheme and www. |
+| Payment wallet is absent | Review the form's wallet settings, payment-domain setup, and browser/device eligibility. |
+
+If you change a form's content, reload the website page to check the updated result. Keep the original public link available as a fallback while resolving website-specific embed issues.
