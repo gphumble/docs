@@ -1,33 +1,46 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# Advocora Help Center — writing instructions
 
-# Documentation project instructions
+This repository contains client-facing support documentation for Advocora. Read
+this file before editing. Public content lives in MDX; navigation is in docs.json.
+Application source and private evidence live in the sibling Advocora application
+repo under docs/knowledgebase. Use that registry to find the relevant source.
 
-## About this project
+## Audience and vocabulary
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Run `mint dev` to preview locally
-- Run `mint broken-links` to check links
+Write for nonprofit staff and administrators, with separate explanations for
+supporters using public forms or private ticket and recurring-gift links.
+Use organization, contact, household, individual, gift, email list, segment,
+registration, ticket tier, membership tier, and enrollment form precisely.
+Use the actual UI labels, including Team & access and Get support.
+Do not describe generic workspaces, project-management tools, SSO, or APIs unless
+that specific customer workflow is implemented and supported in Advocora.
 
-## Terminology
+## Writing and evidence
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- Follow the template in contributing/article-template.md.
+- Use second person, active voice, sentence case, and bold UI labels.
+- Explain the task, prerequisites, numbered steps, expected result, and recovery.
+- Verify claims against UI, API validation, permissions, and relevant workers.
+- Code review is evidence, but does not equal a successful browser walkthrough.
+- Record source revisions and remaining questions in the private coverage registry.
+- Do not publish guesses or TODOs. Resolve uncertainty or omit the disputed claim.
+- Keep procedures usable without screenshots; use real demo UI and fictional data.
+- Explain financial and irreversible consequences before the action.
+- Never include credentials, customer records, internal portals, deployment details,
+  database schemas, secret links, or private code/evidence in public articles.
 
-## Style preferences
+## Maintenance
 
-{/* Add any project-specific style rules below */}
+Update existing stable URLs when possible. Add every new article to docs.json.
+Remove obsolete articles with a redirect to the appropriate replacement.
+Never leave an empty page or an empty CardGroup in the site.
+Link the docs change to the application ticket's documentation impact record.
+Do not mark a guide verified merely because it was edited. Publish release-dependent
+instructions only when the corresponding behavior is available to customers.
 
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+## Checks
 
-## Content boundaries
-
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+Run npm ci, npm run check:content, npm run check:links, and npm run validate.
+Use npm run dev to preview. Review changed pages at desktop and mobile sizes.
+The contributing directory, scripts, and agent instructions are excluded from the
+public build. Commit only intended content and tooling, not local caches or tools.
