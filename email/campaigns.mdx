@@ -1,54 +1,53 @@
 ---
-title: "Build & send a campaign"
-description: "Use the five-step wizard to design an email, choose recipients, test it, and send now or schedule for later."
-sidebarTitle: "Campaigns"
-icon: "paper-plane"
+title: "Build and send an email campaign"
+description: "Create, test, send, or schedule an email campaign and confirm its progress."
 ---
 
-A **campaign** is a single email send to an audience. Open **Email Campaigns** and choose **New Campaign** to open the wizard.
+A campaign sends one email to an email list or a dynamic segment. Open **Marketing → Email Campaigns** and choose **New Campaign**.
 
-## The five steps
+## Before you begin
 
-<Steps>
-  <Step title="Basic details">
-    Name the campaign (internal only), then set the **Subject Line**, optional **Preheader Text**, **From Name**, **From Email Address**, and an optional **Reply-To**.
-  </Step>
-  <Step title="Design email">
-    Start blank or from a published [template](/email/templates), then edit with the drag-and-drop builder.
-  </Step>
-  <Step title="Select recipients">
-    Choose a **list** or a **segment**. You can also pick an **exclude segment** to remove certain contacts. Advocora shows the recipient count—always after removing unsubscribed contacts.
-  </Step>
-  <Step title="Schedule">
-    Add up to three **test email** addresses to preview the real thing, then choose **Send Immediately** or **Schedule for Later** (pick a date, time, and timezone).
-  </Step>
-  <Step title="Review">
-    Check every detail, jump back to edit anything, and confirm.
-  </Step>
-</Steps>
+You need permission to create or edit campaigns. Sending requires separate permission; a Manager can prepare a campaign but cannot send it under the standard roles.
+
+Prepare a [verified sending domain](/settings/sending-domains), a sender address on that domain, and an [email list or segment](/email/lists-and-segments). Include a working unsubscribe link in the message. Advocora sends campaigns natively; an external email-provider integration is optional.
+
+## Build the campaign
+
+1. In **Basic Details**, enter the internal campaign name, **Subject Line**, optional **Preheader Text**, sender name/email, and optional reply-to address. Review tracking settings.
+2. In **Design Email**, choose a template or build the message. Add your content, links, and unsubscribe merge tag. Check any personalization fields and their fallbacks.
+3. In **Select Recipients**, choose **Email List** or **Segment**, then select the audience. If needed, choose an exclusion segment. Review the resulting count.
+4. In **Schedule**, add up to three test email addresses and send a test. Open it on a desktop and phone; check subject, sender, layout, links, and personalization.
+5. Choose immediate sending or a future date/time and its timezone. The timezone you select determines when the scheduled send runs.
+6. In **Review & Send**, check each section again. Use the edit controls to correct anything before selecting **Send Campaign Now** or **Schedule Campaign**.
+
+Use **Save Draft** when the campaign is not ready. A saved draft has not been sent.
 
 <Warning>
-  Your **From Email Address** must use a verified sending domain, or the send will fail. See [Sending domains](/settings/sending-domains).
+Sending starts delivery to your audience. Check the audience and exclusions before confirming; messages already delivered cannot be recalled.
 </Warning>
 
-## Campaign statuses
+## Confirm the result
 
-| Status | Meaning |
+Return to the campaign list and check the status. A scheduled campaign should show **Scheduled**; an immediate campaign progresses through **Sending** to **Sent**. Large audiences can take time because delivery is processed in batches.
+
+**Sent** describes campaign processing, not a guarantee that every recipient received the message. Use [analytics](/email/analytics) to examine deliveries, bounces, opens, and clicks.
+
+The audience count is a preview. Unsubscribes and other suppression checks are applied during sending, so the final sent count can be smaller. Re-adding someone to a list does not guarantee that a suppressed address can receive email.
+
+## Edit, duplicate, or cancel
+
+Use the campaign list's available actions to edit eligible drafts/scheduled campaigns, duplicate a campaign into a new draft, or cancel a schedule. Confirm the resulting status after the action. If a campaign is already sending, cancellation cannot undo messages already sent.
+
+## Troubleshooting
+
+| Problem | What to check |
 | --- | --- |
-| **Draft** | Not sent yet—fully editable |
-| **Scheduled** | Queued for a future time |
-| **Sending** | Going out now |
-| **Sent** | Delivered—analytics available |
-| **Paused / Cancelled / Failed** | Stopped, called off, or errored |
+| No audience is available | Create a list or segment and confirm you are using the intended sending-domain context. |
+| Recipient count is zero or lower than expected | Check list membership, segment conditions, exclusions, consent, and suppressed addresses. |
+| Sender/domain error | Use an active verified domain and a From address belonging to it. |
+| Unsubscribe error | Add the unsubscribe merge tag using the editor; do not replace it with a plain-text promise to unsubscribe. |
+| Test fails | Confirm the test addresses, saved message content, sender, and domain. Resolve the failure before scheduling. |
+| A scheduled send is late | Check the selected timezone and campaign status. Capture the campaign name and scheduled time for **Get support**. |
+| Sending or failed status persists | Use **Get support** with the campaign name, time, and visible error. Check delivery activity before starting a duplicate send. |
 
-## Managing campaigns
-
-From the campaigns list you can **Send Now**, **Cancel Schedule**, **Duplicate**, or **Delete**:
-
-- Only **Draft** and **Scheduled** campaigns can be edited.
-- Only **Draft** and **Cancelled** campaigns can be deleted—sent campaigns are kept for your records.
-- **Duplicate** makes a fresh draft copy, handy for recurring sends.
-
-<Tip>
-  Always send yourself a test first. Scheduling? Double-check the **timezone**—the campaign sends on the timezone you pick, not your computer's.
-</Tip>
+See [Templates](/email/templates) for message design and [Email troubleshooting](/email/troubleshooting) for recipient delivery problems.

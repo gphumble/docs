@@ -69,6 +69,8 @@
           "events/ticketing",
           "events/publish-an-event",
           "events/registrants",
+          "events/refund-a-registration",
+          "events/check-in",
           "events/add-ons",
           "events/public-page-and-emails"
         ]
