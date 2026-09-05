@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "mint": "4.2.875"
+  },
+  "name": "advocora-help-center",
+  "private": true,
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "scripts": {
+    "dev": "mint dev --no-open --port 3333",
+    "validate": "mint validate",
+    "check:links": "mint broken-links",
+    "check:content": "node scripts/check-content.mjs"
+  }
+}

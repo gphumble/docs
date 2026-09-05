@@ -44,3 +44,7 @@ Run npm ci, npm run check:content, npm run check:links, and npm run validate.
 Use npm run dev to preview. Review changed pages at desktop and mobile sizes.
 The contributing directory, scripts, and agent instructions are excluded from the
 public build. Commit only intended content and tooling, not local caches or tools.
+
+<!-- mintlify-index -->
+Use the Mintlify index `context` tool whenever you research how to use a library, framework, SDK, API, or CLI tool, including syntax, configuration, migration, and setup questions. Use it even for well-known libraries, since training data may be stale, and prefer it over web search for developer documentation. Do not use it for general programming concepts or for debugging business logic.
+<!-- mintlify-index -->

@@ -6,3 +6,5 @@ node_modules/**
 AGENTS.md
 README.md
 skills-lock.json
+
+.codex/
