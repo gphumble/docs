@@ -1,44 +1,28 @@
 ---
-title: "Bulk actions & export"
-sidebarTitle: "Bulk actions & export"
-description: "Tag, subscribe, or export many contacts at once."
-icon: "list-checks"
+title: "Export or merge selected contacts"
+description: "Choose an export scope or combine duplicate contacts after reviewing the selected records."
 ---
 
-When you need to act on more than one contact, select them in the list and use **Bulk Actions**. This saves you from repeating the same change one profile at a time.
+Select contact rows on **Contacts**, then use **Bulk Actions**. Check the selected count before continuing; the header checkbox selects the contacts currently displayed.
 
-## Select contacts
+## Export contacts
 
-- Tick the checkbox next to any contact to select it.
-- Use the checkbox in the column header to select everyone currently shown.
-- A bar appears showing how many contacts are selected, with a **Clear selection** link to start over.
+1. Search or filter the contact list first.
+2. Select **Export** or **Bulk Actions → Export Selected**.
+3. In the export dialog, explicitly choose filtered results or selected contacts. Do not rely on the menu label to set the scope for you.
+4. Choose CSV or JSON and select the columns to include.
+5. Confirm the displayed record count, export, and inspect the file.
 
-<Tip>
-  Filter or search first, then select—so you're acting on exactly the right group. See [Find a contact](/contacts/find-contacts).
-</Tip>
+Export requires permission. Keep the file private and share only the fields the recipient needs.
 
-## Available bulk actions
+## Merge selected duplicates
 
-With one or more contacts selected, open the **Bulk Actions** menu:
+Select at least two contacts, choose **Merge Contacts**, and follow [Merge duplicate contacts](/data-management/contact-merge). Compare their people, addresses, giving, and memberships before confirming.
 
-<CardGroup cols={3}>
-  <Card title="Add Tags" icon="tag">
-    Apply one or more tags to every selected contact at once.
-  </Card>
+## Tag contacts or update email lists
 
-  <Card title="Subscribe to List" icon="mail">
-    Add the selected contacts to an email list.
-  </Card>
+For bulk tags and email-list changes, use the working [query bulk actions](/queries/bulk-actions): Contacts mode for tags and Individuals mode for email-list membership. Confirm the changes on a sample record afterward.
 
-  <Card title="Export Selected" icon="download">
-    Download the selected contacts as a file for use elsewhere.
-  </Card>
-</CardGroup>
+## Troubleshooting
 
-<Note>
-  There's no bulk **delete**—this is intentional, to protect your data. Remove contacts one at a time from their profile. See [Manage a contact](/contacts/manage-a-contact).
-</Note>
-
-## Permissions
-
-Some actions depend on your role. For example, exporting contacts requires export permission. If you don't see an action, your administrator may not have granted it to your role.
+If the export includes unexpected records, reopen the dialog and check its scope and filters. If a merge is unavailable, check that at least two contacts are selected and your role permits merging. Use **Clear selection** before starting an unrelated operation.

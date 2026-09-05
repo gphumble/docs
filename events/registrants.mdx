@@ -1,54 +1,61 @@
 ---
-title: "Manage registrants & check-in"
-description: "See who's coming, add registrants by hand, resend confirmations, export the list, and check people in at the door."
-sidebarTitle: "Registrants & check-in"
-icon: "clipboard-user"
+title: "Manage event registrations"
+description: "Find buyers, record walk-ins and past attendance, resend tickets, and export your guest list."
 ---
 
-The **Registrants** tab is your guest list—everyone who bought a ticket or RSVP'd, plus anyone you add manually.
+A registration records a buyer's order. Tickets are the admissions issued for that order. Open **Events**, choose the event, then open **Registrants**.
 
-## Finding registrants
+## Before you begin
 
-Search by name or email, and filter by status: **Pending**, **Paid**, **Refunded**, **Comped**, or **Cancelled**. Each row shows the buyer, email, quantity, status, amount paid, and how many have been checked in.
+Your organization needs Events enabled. Viewing registrations and managing registrations are separate permissions. If you can see the page but an action is denied, ask your Owner or Super Admin to review your role.
 
-## Common actions
+Have an active ticket tier ready before adding a registrant. You can record someone after the event has ended; this does not reopen public ticket sales.
 
-<CardGroup cols={2}>
-  <Card title="Add Registrant" icon="user-plus">
-    Add someone by hand—useful for comps, phone orders, or walk-ups. Set their name, email, tier, quantity, and status.
-  </Card>
+## Find a registration
 
-  <Card title="Open a registrant" icon="address-card">
-    Click a row for full details, to resend their confirmation email, or to check them in.
-  </Card>
+1. Enter the buyer's name or email in **Search name or email**, then press **Enter**.
+2. Choose a status if needed and select **Refresh** to reload the list.
+3. Open the registration to inspect its tickets and available actions.
 
-  <Card title="Export CSV" icon="file-csv">
-    Download the full guest list for printing or sharing.
-  </Card>
+Use **Export CSV** for the event's guest list. The export is separate from the visible search results; inspect the downloaded file before sharing it.
 
-  <Card title="Refresh" icon="arrows-rotate">
-    Reload the table to pull in the latest sales.
-  </Card>
-</CardGroup>
+## Add a walk-in or historical registration
 
-## Checking people in
+1. Select **Add Registrant**.
+2. Under **Find an existing individual**, type at least two characters of a name or email and select the correct person. Check the household and email before choosing. Leave this blank for a person not on file.
+3. Choose an active **Ticket tier** and a **Quantity** from 1 to 100.
+4. Choose **Comped** for complimentary admission or **Paid** for money you already collected outside online checkout.
+5. For **Paid**, enter the total **Amount paid (USD)** for the order. This records the amount; it does not charge a card.
+6. Enter a **Buyer name** or **Buyer email**. Add the optional phone and notes if useful.
+7. Turn on **Send confirmation email with tickets** only if you want an email sent. It is off by default and requires a buyer email. Leave it off when recording past attendance unless the buyer needs a copy.
+8. Select **Add registrant** and confirm that the new row appears.
 
-Each ticket carries a QR code, delivered to the buyer as a mobile ticket. At the door, scanning a ticket marks one admission as checked in. Tickets that admit several guests can be scanned more than once.
+Tickets are issued when you save. Ticket quantity and admissions are different: a tier may admit multiple guests per ticket. Recording attendance does not itself check those admissions in.
 
-<Tip>
-  Volunteers can run the door without full access to your account. Give a volunteer a role with check-in enabled and send their magic link—see [Event add-ons](/events/add-ons#volunteers).
-</Tip>
+## Resend or replace a ticket
 
-## Statuses explained
+Open the registration and choose **Resend email** to queue another confirmation for the buyer. A queued email is not proof of delivery; check the address and the recipient's spam folder if it does not arrive.
 
-| Status | Meaning |
+Use **Reissue** on a ticket when its old QR code must stop working. Read the confirmation first. Reissuing replaces the QR code; resending a confirmation is the appropriate action when someone only needs another copy.
+
+## Registration statuses
+
+| Status | What it means |
 | --- | --- |
-| **Pending** | Payment not yet completed |
-| **Paid** | Paid and confirmed |
-| **Refunded** | Was paid, then refunded |
-| **Comped** | Free admission you issued |
-| **Cancelled** | Registration voided |
+| Pending | Payment has not completed |
+| Paid | The registration is marked paid |
+| Comped | Complimentary admission |
+| Refunded | A refund has been recorded |
+| Cancelled | The registration has been cancelled |
 
-<Note>
-  When a public registration can't be matched to an existing contact, it lands in **Data Management → Event Match** so you can link it and record the gift. See [Event match](/data-management/event-match).
-</Note>
+A manually recorded **Paid** registration does not establish that Stripe collected the money. See [Refund a registration](/events/refund-a-registration) for eligibility.
+
+## Troubleshooting
+
+- **No ticket tiers:** add or activate a tier under **Ticketing**, then reopen the dialog.
+- **Confirmation cannot be selected or sent:** supply a valid buyer email. Check the registration before creating another order to solve an email problem.
+- **An action is denied:** have your Owner or Super Admin check your event permissions.
+- **The event has ended:** the notice is informational; you can still record a registrant.
+- **Buyer missing from giving history:** review [Event match](/data-management/event-match). Do not assume every manual registration creates a gift.
+
+Continue with [Check in guests](/events/check-in) or [Refund a registration](/events/refund-a-registration).

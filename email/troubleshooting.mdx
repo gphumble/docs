@@ -1,0 +1,36 @@
+---
+title: "Troubleshoot email delivery"
+description: "Check sender setup, recipient eligibility, templates, and campaign progress before resending."
+---
+
+Begin by identifying the message: a campaign, a gift receipt, a form confirmation, or an event ticket email. These use different settings and triggers.
+
+## A campaign will not send
+
+1. Open the campaign and read its visible error/status.
+2. Confirm the From address belongs to the selected active, verified [sending domain](/settings/sending-domains).
+3. Check that the content includes the unsubscribe merge tag and the audience has eligible recipients.
+4. Confirm your role allows sending.
+5. Send a controlled test after correcting the setup.
+
+## One supporter did not receive the message
+
+1. Confirm the actual recipient address, including which individual in the household owns it.
+2. For campaigns, check list membership, segment rules, exclusions, opt-in status, and prior unsubscribes or delivery problems.
+3. Review the campaign's delivery activity and any bounce result.
+4. Ask the supporter to check spam and mailbox filtering.
+5. If the record remains unclear, use **Get support** with the campaign/transaction name and time.
+
+Adding a person to a list does not override suppression. Do not repeatedly resend to an address that has bounced or opted out.
+
+## A receipt or confirmation is missing
+
+Check the template selected on the form, gift account, or event. Confirm the triggering action actually completed. Manual event registration confirmation is off by default and must be selected explicitly.
+
+If the gift or registration exists, correct the email setup and use its supported resend action where available. Creating another gift, payment, or registration to trigger an email can duplicate records or charges.
+
+## A scheduled campaign has not finished
+
+Check its chosen timezone, scheduled date, and current status. Sending is processed in batches. Capture the details for support if it remains stuck; inspect delivery activity before duplicating the campaign.
+
+See [Campaigns](/email/campaigns), [Templates](/email/templates), and [Get support](/getting-started/get-support).

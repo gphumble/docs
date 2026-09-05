@@ -34,7 +34,9 @@
         "pages": [
           "getting-started/dashboard",
           "getting-started/navigating",
-          "getting-started/your-account"
+          "getting-started/your-account",
+          "getting-started/first-day",
+          "getting-started/get-support"
         ]
       },
       {
@@ -69,8 +71,14 @@
           "events/ticketing",
           "events/publish-an-event",
           "events/registrants",
+          "events/refund-a-registration",
+          "events/check-in",
           "events/add-ons",
-          "events/public-page-and-emails"
+          "events/public-page-and-emails",
+          "events/sponsors",
+          "events/expenses",
+          "events/auctions",
+          "events/volunteers"
         ]
       },
       {
@@ -82,7 +90,8 @@
           "email/templates",
           "email/lists-and-segments",
           "email/analytics",
-          "email/media-library"
+          "email/media-library",
+          "email/troubleshooting"
         ]
       },
       {
@@ -123,7 +132,8 @@
           "data-management/contact-merge",
           "data-management/subscriber-match",
           "data-management/gifts-match",
-          "data-management/event-match"
+          "data-management/event-match",
+          "data-management/import-preparation"
         ]
       },
       {
@@ -136,7 +146,18 @@
           "settings/payments",
           "settings/sending-domains",
           "settings/integrations",
-          "settings/memberships"
+          "settings/memberships",
+          "memberships/manage-members"
+        ]
+      },
+      {
+        "group": "Advocacy",
+        "icon": "megaphone",
+        "pages": [
+          "advocacy/overview",
+          "advocacy/supporters",
+          "advocacy/actions",
+          "advocacy/match-review"
         ]
       }
     ]
@@ -172,5 +193,59 @@
     "body": {
       "family": "Inter"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/platform/quickstart",
+      "destination": "/getting-started/first-day"
+    },
+    {
+      "source": "/platform/key-concepts",
+      "destination": "/contacts/overview"
+    },
+    {
+      "source": "/platform/administration/roles-permissions",
+      "destination": "/settings/team-and-roles"
+    },
+    {
+      "source": "/platform/configuration/user-management",
+      "destination": "/settings/team-and-roles"
+    },
+    {
+      "source": "/platform/configuration/settings",
+      "destination": "/settings/overview"
+    },
+    {
+      "source": "/analytics/quickstart",
+      "destination": "/reports/overview"
+    },
+    {
+      "source": "/analytics/connect-data",
+      "destination": "/data-management/import-preparation"
+    },
+    {
+      "source": "/analytics/dashboards/create-dashboard",
+      "destination": "/getting-started/dashboard"
+    },
+    {
+      "source": "/analytics/reports/scheduled-reports",
+      "destination": "/reports/exporting-and-scheduling"
+    },
+    {
+      "source": "/integrations/quickstart",
+      "destination": "/settings/integrations"
+    },
+    {
+      "source": "/integrations/authentication",
+      "destination": "/settings/integrations"
+    },
+    {
+      "source": "/integrations/connectors/crm",
+      "destination": "/settings/integrations"
+    },
+    {
+      "source": "/integrations/webhooks/configure",
+      "destination": "/settings/integrations"
+    }
+  ]
 }

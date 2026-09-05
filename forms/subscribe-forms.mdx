@@ -1,35 +1,35 @@
 ---
-title: "Subscribe forms"
-description: "Collect newsletter signups and add subscribers straight to your email lists—no payment required."
-sidebarTitle: "Subscribe forms"
-icon: "envelope-open-text"
+title: "Create a subscribe form"
+description: "Collect supporter details, record communication choices, and route signups to email lists."
 ---
 
-Subscribe forms grow your email audience. A visitor enters their details, and they're added to one or more of your [email lists](/email/lists-and-segments) automatically. Manage them under **Settings → Subscribe forms**.
+Open **Admin Settings → Subscribe forms** to create a public signup form. It collects first name, last name, and email, with optional phone and address fields.
 
-## Create a form
+## Before you begin
 
-Choose **\+ New subscribe form**, give it a name, and choose which **email list(s)** new subscribers join. Like other forms, it has branding options and a **draft / published / archived** status.
+Create the destination [email lists](/email/lists-and-segments). You need at least one selected list to publish the form. If you want a confirmation email, prepare a compatible template first.
 
-The forms table shows each form's name, how many lists it feeds, and its status.
+## Build and publish
 
-## What happens on submit
+1. Create a form, enter its **Form name**, and keep **Status** as **Draft** while setting it up.
+2. Under **Email lists**, select the lists this form should feed.
+3. Under **Fields**, choose whether to collect phone and mailing address. Configure the email and phone/SMS opt-in checkboxes and their wording to reflect what the supporter is agreeing to.
+4. Under **Confirmation email**, enable **Send a confirmation email after submission** if needed and select its required template.
+5. Add branding, headings, thank-you message, disclaimer, logo, and background as needed.
+6. Add allowed embed origins if the form will be used on another website.
+7. Save, set **Published**, save again, and check the public link or [embed](/forms/embedding).
 
-<Steps>
-  <Step title="A visitor subscribes">
-    They enter their email and name on your published form.
-  </Step>
-  <Step title="They're added to your lists">
-    The subscriber joins the email list(s) you chose.
-  </Step>
-  <Step title="A confirmation can be sent">
-    If you've set a **Subscription Response** template, they receive it automatically. See [Email templates](/email/templates).
-  </Step>
-  <Step title="You match them to a contact">
-    New subscribers who aren't already contacts wait in [Subscriber match](/data-management/subscriber-match) for you to link or add.
-  </Step>
-</Steps>
+## What happens after submission
 
-<Tip>
-  Embed a short subscribe form in your website footer or on a campaign landing page to capture supporters who aren't ready to give yet. See [Embedding forms](/forms/embedding).
-</Tip>
+The submitted details enter the matching process. Review **Data Management → Subscriber Match** when a signup needs a person or household selected or created. Do not assume that a submitted email already has a completed contact record or final list membership.
+
+If confirmation is enabled, check the template and recipient address when a message is missing. A submission can succeed even when a later email step needs attention.
+
+## Troubleshooting
+
+- **Cannot publish:** select at least one destination list and resolve any required-template message.
+- **Expected field is missing:** check the field toggle and save the form.
+- **Subscriber missing from a list/contact:** search for the email, then review [Subscriber match](/data-management/subscriber-match) before entering a duplicate.
+- **Existing supporter remains unsubscribed:** inspect their communication preferences and suppression status; a new signup should not be treated as permission to bypass a prior opt-out without review.
+
+Use a fictional test supporter and an address you control when checking the signup flow.

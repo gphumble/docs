@@ -27,7 +27,7 @@ icon: "palette"
 
 ## Transactional purposes
 
-Transactional templates send themselves when something happens:
+Transactional templates are used when a matching workflow is configured to use them:
 
 <AccordionGroup>
   <Accordion title="Gift Receipt" icon="receipt">
@@ -58,3 +58,16 @@ Templates appear as cards showing a preview, status badge, and category. From ea
 <Tip>
   Duplicate a template to make seasonal variations without rebuilding from scratch.
 </Tip>
+
+## Design and test the message
+
+1. Open **Marketing → Email Templates**, create or edit a template, and enter the builder.
+2. Add the needed content blocks and edit their text, links, images, and styling.
+3. Insert personalization through the merge-tag controls so you use supported fields. Campaign messages need an unsubscribe link.
+4. Review desktop and mobile previews, then save. Check the saved status before selecting the template in a campaign or form.
+5. Assign transactional templates to the form, gift account, or membership workflow that should use them. Creating a template alone does not enable an automatic email.
+6. Test through the intended workflow using a controlled recipient.
+
+## Troubleshooting
+
+If a template is missing from a selector, check its type, purpose, published status, and sending-domain context. If personalized text is blank, check whether the recipient has that field populated. If a receipt does not send, inspect the triggering form/account configuration before recreating the gift.

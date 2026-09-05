@@ -1,0 +1,39 @@
+---
+title: "Refund an event registration"
+description: "Return an online ticket payment and understand what happens to the tickets."
+---
+
+Use the registration's refund action to return an eligible online payment. The event registration screen offers a **full refund**.
+
+## Before you begin
+
+You need permission to manage event submissions. The registration must be **Paid**, have a Stripe payment associated with it, and belong to an event with its connected payment account available.
+
+A **Paid** registration entered manually for cash, check, or an outside payment cannot be refunded through this action. Return that payment through the original payment method and coordinate the record correction with your administrator.
+
+<Warning>
+Refunding a registration voids its related tickets. Confirm the buyer and the whole order amount before continuing.
+</Warning>
+
+## Issue the refund
+
+1. Open **Events**, choose the event, and open **Registrants**.
+2. Search for the buyer and open the registration.
+3. Check the buyer, ticket tier, quantity, and paid amount.
+4. Select **Refund … (full)** at the bottom of the panel.
+5. Read the confirmation showing the amount and buyer, then confirm.
+6. Wait for the result. After success, refresh the list and confirm the registration is **Refunded** and its tickets are **Voided**.
+
+A refund being recorded does not mean the money is already visible in the buyer's bank account. Do not promise an arrival date from the registration screen.
+
+## Troubleshooting
+
+| Problem | What to do |
+| --- | --- |
+| Refund unavailable | Check the registration status. Complimentary, pending, cancelled, and already refunded registrations are not eligible here. |
+| No Stripe payment on file | This may be a manually recorded payment. Use the original payment method. |
+| No connected account | Ask an administrator to review the event's payment setup. |
+| Stripe refund failed | Preserve the error and registration details and use **Get support** if the payment/account issue is unclear. |
+| Stripe refund succeeded but the local update failed | Check the payment status with your administrator and contact support to reconcile the records before attempting another refund. |
+
+Do not delete a gift or reissue a ticket as a substitute for refunding a payment. For ordinary gifts, use the separate [gift refund procedure](/gifts/manage-gifts).

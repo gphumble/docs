@@ -49,3 +49,9 @@ Choose **Export** above the table to download your gifts as **CSV** or **JSON**.
 <Tip>
   Exporting is permission-gated. If you don't see the **Export** button, ask an administrator to enable gift export for your role.
 </Tip>
+
+## Check corrections against payments
+
+Editing a gift's CRM amount or deleting its record is different from changing a payment. Confirm the Stripe payment/refund status separately. After a refund, inspect the recorded refund amount and donor history before taking another action.
+
+If an action fails after the payment provider may have processed it, use **Get support** with the gift and transaction details before retrying. For event ticket payments, follow [Refund an event registration](/events/refund-a-registration).

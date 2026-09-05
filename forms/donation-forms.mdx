@@ -1,6 +1,41 @@
 ---
-title: "Donation forms"
-sidebarTitle: "Donation forms"
-description: "Build a branded donation page with suggested amounts, recurring options, fee coverage, and compliance fields."
-icon: "hand-holding-heart"
+title: "Create and publish a donation form"
+description: "Configure amounts, recurring giving, receipts, gift routing, and a hosted or embedded donation page."
 ---
+
+Donation forms accept contributions through your organization's connected payment account. Open **Admin Settings → Donation forms**, then create a form or open an existing one.
+
+## Before you begin
+
+You need donation-form management permission, a charges-enabled [payment account](/settings/payments), and a one-time receipt template. Recurring giving also requires a recurring receipt template. Prepare receipt content under [Email Templates](/email/templates).
+
+## Configure the form
+
+1. Under **Basics**, enter the **Form name**, choose the **Connect account**, and leave **Status** as **Draft** while preparing it.
+2. Under **Amounts**, enter suggested dollar amounts separated by commas, such as `25, 50, 100, 250`. Set the default, minimum, and maximum amounts. Enable **Allow custom amount** if donors may choose their own amount.
+3. Under **Recurring**, choose whether to enable recurring donations and select the intervals to offer.
+4. Choose whether to show fee coverage and employer/occupation fields. Supply your organization's approved disclaimer or paid-for-by wording where applicable.
+5. Review wallet-payment options. Availability to a donor also depends on their device/browser and the payment setup.
+6. Set branding, logo, background, page heading, supporting text, and thank-you message. Review both hosted-page and embed appearance.
+7. Under **Routing**, choose the gift designation, gift account, and optional project. A gift account categorizes the gift in Advocora; the Connect account processes the payment.
+8. If using sub-projects, either pin the form to one sub-project or allow the donor to choose. Review the available choices and the donor-facing label.
+9. Select the required receipt templates. Configure allowed website origins if embedding, then save.
+
+## Publish and check
+
+Set **Status** to **Published** and save. Copy the form's public link or [embed code](/forms/embedding). Open the public page while signed out and verify the amounts, frequency choices, wording, branding, and receipt setup.
+
+An online payment is not the same as manually [recording a gift](/gifts/record-a-gift). Do not enter a second gift merely because a completed donation has not appeared in the contact record yet; check the payment and matching process first.
+
+## Troubleshooting
+
+| Problem | What to check |
+| --- | --- |
+| No usable Connect account | Complete onboarding under Payments and refresh the account status. |
+| Save requests a receipt template | Choose a one-time template and, when recurring is enabled, a recurring template. |
+| Amount validation fails | Use positive dollar values, at least one suggested amount, and a minimum no greater than the maximum. |
+| The public page is unavailable | Confirm Published was saved and use the copied public link. |
+| A wallet button is missing | Check the form setting, browser/device support, and the embedded host's allowed origin. |
+| A donor did not receive a receipt | Check the email address and receipt template. Preserve the payment details for support rather than asking the donor to pay again. |
+
+See [Payments](/settings/payments), [Embedding forms](/forms/embedding), and [Recurring gifts](/gifts/recurring-gifts).

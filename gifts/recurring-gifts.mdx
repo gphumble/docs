@@ -13,9 +13,13 @@ Each row shows the **donor**, **amount**, **interval**, **status**, when it **st
 
 ### Statuses
 
-<CardGroup cols={2}>
-     
-</CardGroup>
+| Status | How to interpret it |
+| --- | --- |
+| Active | The recurring record is active. Check the payment subscription for actual billing. |
+| Paused | The record is paused; confirm the payment-provider state before promising no charges. |
+| Canceled | The recurring arrangement has ended or been marked cancelled. |
+
+A manually entered recurring record does not collect a card or create a paid subscription by itself.
 
 ### Intervals
 

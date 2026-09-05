@@ -50,3 +50,13 @@ Choose **Create New Segment**, name it, then build the rules:
 <Tip>
   Use a **list** for a known, unchanging group and a **segment** when you want the audience to keep itself current (like "gave in the last 90 days").
 </Tip>
+
+## Verify audience changes
+
+After adding someone, search the list for the individual's email and review their subscribed state. For a segment, use Preview or Refresh Members and inspect the rules and sample results. Changes to a person's data can change whether they match a dynamic segment.
+
+List membership, email opt-in, and suppression are separate checks. An unsubscribed or suppressed address may be excluded even when the person appears in a list. For bulk list updates, use [Individuals query results](/queries/bulk-actions).
+
+## Troubleshooting
+
+If a list or segment is missing, check the selected sending domain and active state. If a segment is too broad, inspect AND/OR group logic and date conditions. If a supporter remains absent, review [Subscriber Match](/data-management/subscriber-match) before adding a duplicate person.

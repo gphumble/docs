@@ -1,24 +1,33 @@
 ---
-title: "Take action on query results"
-description: "Apply tags, collections, notes, list membership, and more to everyone a query returns—in one move."
-sidebarTitle: "Bulk actions"
-icon: "list-check"
+title: "Act on selected query results"
+description: "Select the intended records and apply actions appropriate to contacts or individuals."
 ---
 
-Once a [query](/queries/build-a-query) returns results, you can act on the whole set at once instead of opening records one by one.
+Run a [query](/queries/build-a-query), review its results, then select the records you want to change. The toolbar shows the selected count.
 
-## What you can do in bulk
+## Select the intended scope
 
-<CardGroup cols={2}>
-     
-</CardGroup>
+1. Confirm the result mode: contacts, individuals, or gifts.
+2. Select individual rows or use the page-selection control.
+3. If you want more than the displayed page, use the offered all-results selection and check the resulting count.
+4. Verify a few selected records before opening a bulk action.
 
-You can also **delete records** in bulk.
+Do not assume selecting the page automatically selects all query results. Read the selection count before confirming.
+
+## Available actions
+
+| Result mode | Actions offered |
+| --- | --- |
+| Contacts | Add Tags, Remove Tags, Add Note, Delete |
+| Individuals | Add to Email List, Remove from Email List, Add to Collections, Remove from Collections, Opt In, Opt Out, Delete |
+| Gifts | The contact/individual bulk editing and deletion actions are not offered |
+
+Choose the action, complete its dialog, review the scope, and confirm. Check the result or rerun the query afterward: a change can mean a record no longer matches the original conditions.
 
 <Warning>
-  Bulk actions apply to **every record the query returned**, not just the ones visible on screen. Double-check your query before running one—and be especially careful with **delete**, which can't be undone.
+Delete is irreversible and may be refused for protected records. Read the dialog before proceeding. Updating opt-in status should reflect the person's actual communication choice; list membership alone does not establish consent.
 </Warning>
 
-<Tip>
-  This pairs perfectly with segments: query "gave last year but not this year," then add everyone to a "Win-back" email list in a single step.
-</Tip>
+## Troubleshooting
+
+If an expected action is absent, check the result mode. If it is denied, check your permissions. If a large operation reports partial results or errors, review which records changed before repeating it; repeating an Add Note action can create duplicate notes.
