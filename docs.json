@@ -63,6 +63,18 @@
         ]
       },
       {
+        "group": "Memberships",
+        "icon": "id-card",
+        "pages": [
+          "memberships/overview",
+          "memberships/manage-members",
+          "settings/memberships",
+          "forms/membership-forms",
+          "memberships/renewals",
+          "memberships/couples-and-families"
+        ]
+      },
+      {
         "group": "Events",
         "icon": "calendar-days",
         "pages": [
@@ -101,7 +113,6 @@
           "forms/overview",
           "forms/donation-forms",
           "forms/subscribe-forms",
-          "forms/membership-forms",
           "forms/embedding"
         ]
       },
@@ -145,9 +156,7 @@
           "settings/team-and-roles",
           "settings/payments",
           "settings/sending-domains",
-          "settings/integrations",
-          "settings/memberships",
-          "memberships/manage-members"
+          "settings/integrations"
         ]
       },
       {
