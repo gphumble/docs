@@ -1,0 +1,61 @@
+---
+title: "Renewals"
+description: "See what's coming due, send reminders, and record payments as they arrive."
+sidebarTitle: "Renewals"
+icon: "rotate"
+---
+
+**Memberships → Renewals** is the working list of what's about to lapse. It's sorted soonest-first and grouped by urgency, so the top of the page is always the most pressing work.
+
+## Choosing what you're looking at
+
+Tabs across the top switch between **Next 30 days**, **Next 60 days**, **Next 90 days**, and **Overdue**—memberships whose term has already ended without renewing.
+
+Below that you can narrow by tier, by payment method, and by **No reminder sent for this term**.
+
+<Note>
+  Lifetime memberships never appear here. They have no term end and never come up for renewal.
+</Note>
+
+## Which rows need you
+
+Not every row is work.
+
+- **Card-paid memberships renew themselves.** They're shown greyed out with an **auto-renews** label, and there's nothing to do unless the payment fails—at which point the membership turns **Past due**.
+- **Complimentary memberships** are marked **nothing to collect**. There's no payment to chase; the only question is whether to extend them.
+- **Offline memberships** are the real queue. Somebody has to ask for the money and record it when it arrives, which is why those rows carry both **Send reminder** and **Record payment**.
+
+In the 30/60/90-day views, the heading tells you how many of the listed renewals actually need a person.
+
+## Sending a reminder
+
+The **Last reminder** column shows when a reminder went out **for the term now ending**. A reminder sent for last year's renewal doesn't count as handled and shows as —.
+
+To send one, choose **Send reminder** on the row. To send several, tick the rows and use **Send reminders** at the top; you'll be asked to confirm, told how many would be receiving a second reminder for the same term, and given a per-member result afterwards. You can send up to 200 at a time.
+
+<Warning>
+  These are real emails to your members. Read the confirmation before accepting it—particularly the count of people who have already had a reminder for this term.
+</Warning>
+
+If **Send reminder** is greyed out, the membership's tier has no renewal reminder template. Set one under **Memberships → Tiers**, in the tier's **Renewal reminders** section, and pick a [transactional template](/email/templates).
+
+Advocora also sends these reminders automatically, once a day, to anyone inside their tier's reminder window who hasn't been reminded for the current term. Sending by hand is for the ones you want to chase sooner.
+
+## Recording a payment
+
+When an offline member pays, choose **Record payment** on their row. Enter the amount, the date it arrived, and any note. Advocora books the gift against the membership and moves the term end forward by a full term, so the row leaves the list straight away.
+
+The amount is pre-filled with the tier's full term price, because recording a renewal buys another whole term. If the member paid something different—a partial payment, or a price you agreed with them—change it before saving.
+
+You can also do this from the membership itself, on its **Billing & renewals** tab.
+
+## Exporting
+
+**Export CSV** downloads exactly what's on screen, filters and all—member, email, phone, tier, how many people it covers, renewal date, amount, status, payment method, and when the last reminder went out. Useful for a phone list or a mail-merge.
+
+## Troubleshooting
+
+- **A membership you expected isn't listed.** Check the window, the filters, and whether its term has already passed (try **Overdue**). Lifetime memberships never appear.
+- **The reminder didn't arrive.** Confirm the primary member has an email address, that the tier has a reminder template, and check your [sending domain](/settings/sending-domains).
+- **Someone renewed but is still listed.** The payment may not be recorded against the membership yet. Open it and check **Billing & renewals**.
+- **A membership lapsed that shouldn't have.** Offline and complimentary memberships lapse automatically once their term end passes. Record the payment, or extend the term.
