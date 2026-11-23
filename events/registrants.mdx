@@ -9,7 +9,7 @@ A registration records a buyer's order. Tickets are the admissions issued for th
 
 Your organization needs Events enabled. Viewing registrations and managing registrations are separate permissions. If you can see the page but an action is denied, ask your Owner or Super Admin to review your role.
 
-Have an active ticket tier ready before adding a registrant. You can record someone after the event has ended; this does not reopen public ticket sales.
+Have an active ticket tier ready before adding a registrant. Table tiers can't be added here; use **New table** on the [Tables tab](/events/table-hosts-and-guests). You can record someone after the event has ended; this does not reopen public ticket sales.
 
 ## Find a registration
 
@@ -17,7 +17,7 @@ Have an active ticket tier ready before adding a registrant. You can record some
 2. Choose a status if needed and select **Refresh** to reload the list.
 3. Open the registration to inspect its tickets and available actions.
 
-Use **Export CSV** for the event's registrations. The file has one row per registration with its ID, ticket tier, quantity, buyer name, email, phone, status, paid amount, and date created. It ignores your search and status filter; inspect it before sharing.
+Use **Export CSV** for the event's registrations. The file has one row per registration with its ID, ticket tier, quantity, buyer name, email, phone, status, paid amount, date created, table, and host. The last two are filled in for tickets that are [seated](/events/seating) and registrations at a host's table. It ignores your search and status filter; inspect it before sharing.
 
 ## Review incomplete checkouts
 
@@ -74,15 +74,15 @@ After the event has ended, or when the ticket is already checked in, reassigning
 
 Reminders and thank-yous go to whoever held each ticket when the event ended. A reassigned holder without an email address receives none. A buyer who has reassigned every ticket no longer counts as registered in Queries. To undo a reassignment, reassign the ticket to the buyer with **Existing person**.
 
-## Delete a comped registration
+## Delete a registration
 
-You can delete a **Comped** registration that has no payment or gift attached, such as one added by mistake.
+You can delete a registration that never involved money: a comped registration, a free RSVP, or a $0 ticket, with no online payment or gift attached.
 
 <Warning>
 Deleting is permanent. The registration's tickets stop working and any check-ins on it are removed.
 </Warning>
 
-Open the registration, select **Delete registration**, and confirm. Other registrations can't be deleted; for an online payment, use [Refund a registration](/events/refund-a-registration).
+Open the registration, select **Delete registration**, and confirm. Other registrations can't be deleted; for an online payment, use [Refund a registration](/events/refund-a-registration). To delete a table host's free registration, cancel the table first.
 
 ## Registration statuses
 
