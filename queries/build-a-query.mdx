@@ -13,11 +13,11 @@ Start by choosing the **result mode**—what each row in your results represents
 
 | Result mode | One row represents |
 | --- | --- |
-| Contacts | A household, organization, or foundation |
+| Contacts/Households | A household, organization, or foundation |
 | Individuals | A person, including their contact methods |
 | Gifts | A recorded contribution |
 
-Choose Individuals for email-list actions and Contacts for household-level tags or notes.
+Choose **Individuals** for email-list actions and **Contacts/Households** for household-level tags or notes.
 
 <Note>
   Switching modes clears your current conditions and results, since each mode has its own set of fields.
@@ -32,11 +32,11 @@ Choose Individuals for email-list actions and Contacts for household-level tags 
   <Step title="Combine with AND / OR">
     Set the group logic: **AND** requires every condition; **OR** matches any. You can nest groups for more complex logic.
   </Step>
-  <Step title="Execute">
-    Choose **Execute**, then pick which **fields** (columns) to show in your results.
+  <Step title="Run the query">
+    Choose **Run Query**. In the **Select Fields to Display** dialog, tick the fields (columns) to show in your results, then choose **Show Results**.
   </Step>
   <Step title="Save (optional)">
-    Choose **Save**, name the query, and optionally **share it with your team**.
+    Choose **Save Query**, name the query, and optionally tick **Share with my organization**.
   </Step>
 </Steps>
 
@@ -63,11 +63,11 @@ Gifts recorded by the Events module (tickets, merchandise, auction wins, sponsor
 - **Is Event Gift** / **Event (Gift)** / **Event Gift Type** — under the **Events** category. Types are _Ticket_, _Merchandise_, _Auction win_, and _Sponsorship_; imported event gifts with no type are _Unspecified (imported)_.
 - **Is Membership Gift** / **Membership Gift Tier** — under the **Memberships** category.
 
-In **Gifts** mode these filter the transactions themselves (for example, every ticket gift for the Fall Gala). In **Contacts** or **Individuals** mode they find the people who have such a gift.
+In **Gifts** mode these filter the transactions themselves (for example, every ticket gift for the Fall Gala). In **Contacts/Households** or **Individuals** mode they find the people who have such a gift.
 
 ### Event registration and attendance
 
-These fields are in the **Events** category, in **Contacts** and **Individuals** modes:
+These fields are in the **Events** category, in **Contacts/Households** and **Individuals** modes:
 
 - **Registered for an Event (purchaser)** and **Registered for Event (purchaser)** find people who bought a registration. They include buyers whose registration was never matched to a contact, by using the email given at checkout.
 - **Attending an Event (incl. guests)** and **Attending Event (incl. guests)** also find people named as guests on someone else's registration.
@@ -86,6 +86,6 @@ The **Saved queries** tab lists everything you've saved. Filter by search, resul
 
 ## Check your results
 
-Start with a narrow example whose outcome you can verify. Inspect several rows after executing, then adjust the conditions. AND requires every condition in the group; OR permits any condition. Use nested groups when those rules need to be combined. Re-execute after editing conditions before using a bulk action.
+Start with a narrow example whose outcome you can verify. Inspect several rows after running the query, then adjust the conditions. AND requires every condition in the group; OR permits any condition. Use nested groups when those rules need to be combined. Choose **Run Query** again after editing conditions before using a bulk action.
 
 For no results, remove conditions one at a time and confirm the result mode. For too many results, check OR groups and whether an empty condition is broadening the query. See [Act on selected results](/queries/bulk-actions) before editing records in bulk.

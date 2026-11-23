@@ -7,6 +7,10 @@ icon: "pen-to-square"
 
 The actions on the right of each gift row depend on your role. Here's what each one does.
 
+<Frame caption="The All gifts table: (1) the pencil edits a gift, (2) Refund, on card gifts charged through Stripe, (3) the trash deletes a gift, (4) Export.">
+  ![The All gifts table with sample gifts, each row ending in a pencil icon, a Refund link where one applies, and a trash icon, below the Record Gift and Export buttons](/images/gifts/gifts-row-actions.png)
+</Frame>
+
 ## Edit a gift
 
 Choose the **pencil** icon to change a gift's amount, date, method, designation, account, or check number. Save when you're done.
@@ -17,7 +21,7 @@ A **Refund** link appears only on card gifts that were charged through Stripe an
 
 <Steps>
   <Step title="Open the refund dialog">
-    Choose **Refund** on the gift row (or **Refund this gift** when editing).
+    Choose **Refund** on the gift row (or **Refund this gift** when editing). The **Refund donation** dialog opens.
   </Step>
   <Step title="Choose full or partial">
     Pick **Full refund** for the whole amount, or **Partial refund** and enter a smaller amount (it can't exceed the original gift).
@@ -29,6 +33,10 @@ A **Refund** link appears only on card gifts that were charged through Stripe an
     Choose **Issue refund**. Stripe processes it and the gift updates here automatically—usually within a few seconds.
   </Step>
 </Steps>
+
+<Frame caption="The Refund donation dialog: (1) Full refund or Partial refund, with the amount for a partial one, (2) the reason, (3) Issue refund.">
+  ![The lower part of the Refund donation dialog with Partial refund chosen, an amount of 40.00, the reason Requested by donor, and the Cancel and Issue refund buttons](/images/gifts/gifts-refund-dialog.png)
+</Frame>
 
 <Note>
   Refunds are handled by Stripe, so they only apply to card gifts paid through Advocora. Cash, check, and other manually recorded gifts can be edited or deleted, but not refunded.
@@ -46,6 +54,10 @@ Choose the **trash** icon. Because this can't be undone, you'll review a summary
 
 Choose **Export** above the table to download your gifts as **CSV** or **JSON**. The export includes every gift that matches your current filters, so filter first to get exactly the set you want.
 
+<Frame caption="The export dialog: (1) Download CSV, (2) Download JSON.">
+  ![The Export Gifts dialog stating how many gifts match the current filters, with Download CSV and Download JSON buttons](/images/gifts/gifts-export.png)
+</Frame>
+
 <Tip>
   Exporting is permission-gated. If you don't see the **Export** button, ask an administrator to enable gift export for your role.
 </Tip>
@@ -54,4 +66,4 @@ Choose **Export** above the table to download your gifts as **CSV** or **JSON**.
 
 Editing a gift's CRM amount or deleting its record is different from changing a payment. Confirm the Stripe payment/refund status separately. After a refund, inspect the recorded refund amount and donor history before taking another action.
 
-If an action fails after the payment provider may have processed it, use **Get support** with the gift and transaction details before retrying. For event ticket payments, follow [Refund an event registration](/events/refund-a-registration).
+If an action fails after the payment provider may have processed it, choose **Support** in your avatar menu and include the gift and transaction details before retrying. For event ticket payments, follow [Refund an event registration](/events/refund-a-registration).
