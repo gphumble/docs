@@ -1,0 +1,99 @@
+---
+title: "Offer tables at an event"
+description: "Let supporters take a whole table, become its host, and invite their own guests to fill the seats."
+sidebarTitle: "Tables"
+icon: "people-group"
+---
+
+A table tier lets one person take a whole table. That person becomes the table's **host**. They get a private page to manage the table and an invite page to share, and their guests register for seats from that invite page. Use tables for galas and dinners where supporters bring their own circle.
+
+Tables work for paid events and for free (RSVP) events.
+
+## Before you begin
+
+- You need permission to edit events.
+- Turn on **Offer tables** for the event. It is one of the options when you [create the event](/events/create-an-event), and you can switch it on later by editing the event.
+- For a paid event, connect the Stripe account the event charges to before you publish.
+- Decide who pays for the seats. This is the most important choice, and it is set on each table tier.
+
+## Decide who pays
+
+| Who pays | What the host pays | What a guest pays |
+| --- | --- | --- |
+| **The host pays for the whole table** | The table price, once | Nothing. Guests claim a seat at no charge. |
+| **Each guest pays for their own seat** | The seat price for each seat the host fills themselves | The seat price for each seat they take |
+
+Every payment is recorded as that person's own gift with its own receipt. A seat is never paid for twice, and a guest's payment never reimburses the host.
+
+On a free event nobody pays, so the host simply reserves the table and guests RSVP for seats.
+
+## Add a table tier
+
+1. Open **Events**, choose the event, then open **Ticketing**.
+2. Select **Add tier**, or select **Edit** on an existing tier.
+3. Set **Type** to **Table**.
+4. Enter **Seats per table** (at least 2) and **Tables available**, which is how many tables can be taken on this tier.
+5. Under **Who pays for the seats**, choose **The host pays for the whole table** or **Each guest pays for their own seat**.
+6. Enter the **Table price ($)** when the host pays, or the **Price per seat ($)** when guests pay.
+7. To give each guest at these tables a specific seat, not just a table, select **Designate seats**. You assign the seats later on the [seating](/events/seating) page.
+8. Select **Save tier**.
+
+You can add several table tiers, for example a VIP table and a standard table, each with its own seats, price, and rules.
+
+## When guests pay: seats nobody buys
+
+When each guest pays for their own seat, some seats may never be bought. Choose what happens to them under **Seats still unsold when sales end**, and set the **Seat sales end** date, which must be before the event starts.
+
+| Option | What happens when seat sales end |
+| --- | --- |
+| **Leave them for staff to handle** | Nothing automatic. Guests can no longer buy seats at these tables, and your team decides what to do with the open seats. The end date is optional for this option. |
+| **Release them to another ticket tier** | Each table shrinks to the seats that were taken and closes to new guests. The freed seats go on general sale in the ticket tier you choose under **Release unsold seats to**. |
+| **Charge the host for them** | The host's saved card is charged the seat price for each seat nobody bought. |
+
+### Release them to another ticket tier
+
+Choose an ordinary ticket tier to receive the seats, or select **Create a tier** to make one on the spot. A tier created this way starts inactive, so it sells nothing until seats are released into it. When seats are released, the tier is switched on and its capacity grows by the number of seats released. A tier that is already active with no capacity limit is left as it is, because it can already sell those seats.
+
+People who buy released seats are ordinary ticket buyers. They do not belong to a host's table, and you seat them yourself.
+
+### Charge the host for them
+
+With this option the host must agree to the charge before they can take the table.
+
+- At checkout the host sees the agreement: the price per seat, the date, the most seats they could be charged for, and the largest possible total. They must tick the box to continue.
+- The host pays for their own seats by card. That card is saved and is the one charged later. Bank payments and digital wallets are not offered for this purchase.
+- If the host chose to cover processing fees when they took the table, the later charge covers fees the same way. They are not asked again.
+- This is a saved card, not a hold on funds, so the later charge can be declined.
+
+When seat sales end, the host is charged once for the seats still unsold. After that charge, those seats belong to the host: anyone with the invite link can take one at no charge, so nobody pays for a seat the host already paid for.
+
+The host is emailed a reminder 7 days and 1 day before the end date while seats are still unsold, and again when the card is charged.
+
+<Warning>
+  If the host's card is declined, the open seats at that table stay closed and nothing is released automatically. The host is emailed a link to update their card, and the table is flagged for your team. See [Manage table hosts and guests](/events/table-hosts-and-guests).
+</Warning>
+
+## Check the result
+
+1. [Publish the event](/events/publish-an-event). Publishing is blocked, with a message naming the tier, if a table tier is missing seats, a seat price, a seat sales end date, or a tier to release seats to.
+2. Open the public event page. A table tier shows as **Table of** followed by its seat count, with how many tables are left.
+3. When someone takes a table they are asked how many seats they are filling now. They receive tickets for those seats only. The rest stay open for their guests.
+
+A table is taken on its own. A buyer cannot add other tickets to the same order.
+
+## Troubleshooting
+
+**Table is not offered in the Type menu.** Turn on **Offer tables** for the event, then reopen the tier.
+
+**A table tier disappeared from the public page.** When guests pay for their own seats, the tier is no longer offered once its **Seat sales end** date has passed.
+
+**You need to give a table away.** Use **New table** on the **Tables** tab to create a complimentary table. The **Add Registrant** dialog on the Registrants tab does not accept table tiers.
+
+**You changed a tier after tables were taken.** Tables already taken keep the seat count they had when they were taken. Change a single table's seats from the **Tables** tab instead.
+
+## Related tasks
+
+- [Manage table hosts and guests](/events/table-hosts-and-guests)
+- [Seat guests and print seating reports](/events/seating)
+- [Ticketing and tiers](/events/ticketing)
+- [Refund a registration](/events/refund-a-registration)

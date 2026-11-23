@@ -9,7 +9,7 @@ A registration records a buyer's order. Tickets are the admissions issued for th
 
 Your organization needs Events enabled. Viewing registrations and managing registrations are separate permissions. If you can see the page but an action is denied, ask your Owner or Super Admin to review your role.
 
-Have an active ticket tier ready before adding a registrant. You can record someone after the event has ended; this does not reopen public ticket sales.
+Have an active ticket tier ready before adding a registrant. Table tiers cannot be added here; give a table away with **New table** on the [Tables tab](/events/table-hosts-and-guests). You can record someone after the event has ended; this does not reopen public ticket sales.
 
 ## Find a registration
 
@@ -17,7 +17,7 @@ Have an active ticket tier ready before adding a registrant. You can record some
 2. Choose a status if needed and select **Refresh** to reload the list.
 3. Open the registration to inspect its tickets and available actions.
 
-Use **Export CSV** for the event's guest list. The export is separate from the visible search results; inspect the downloaded file before sharing it.
+Use **Export CSV** for the event's guest list. The export is separate from the visible search results; inspect the downloaded file before sharing it. For events with tables, the export includes a **table** column (where the registration's tickets are seated) and a **host** column (the host of the table the registration belongs to).
 
 ## Add a walk-in or historical registration
 
@@ -49,6 +49,12 @@ Use **Reissue** on a ticket when its old QR code must stop working. Read the con
 | Cancelled | The registration has been cancelled |
 
 A manually recorded **Paid** registration does not establish that Stripe collected the money. See [Refund a registration](/events/refund-a-registration) for eligibility.
+
+## Delete a registration
+
+You can delete a registration that never involved money: a comped registration, a free RSVP, or a $0 ticket. Open the registration and select **Delete registration**. Its tickets stop working, any check-ins are removed, and it can't be undone.
+
+A registration with a payment can't be deleted. [Refund it](/events/refund-a-registration) instead. A table host's registration can't be deleted while the table stands; cancel the table first.
 
 ## Troubleshooting
 

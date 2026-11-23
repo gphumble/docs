@@ -14,7 +14,7 @@ Prepare a [verified sending domain](/settings/sending-domains), a sender address
 ## Build the campaign
 
 1. In **Basic Details**, enter the internal campaign name, **Subject Line**, optional **Preheader Text**, sender name/email, and optional reply-to address. Review tracking settings.
-2. In **Design Email**, choose a template or build the message. Add your content, links, and unsubscribe merge tag. Check any personalization fields and their fallbacks.
+2. In **Design Email**, choose a template or build the message. Add your content, links, and an **Unsubscribe** block. **Next** stays unavailable until the design is saved with an unsubscribe link, and a message beside the button says what is missing. Check any personalization fields and their fallbacks.
 3. In **Select Recipients**, choose **Email List** or **Segment**, then select the audience. If needed, choose an exclusion segment. Review the resulting count.
 4. In **Schedule**, add up to three test email addresses and send a test. Open it on a desktop and phone; check subject, sender, layout, links, and personalization.
 5. Choose immediate sending or a future date/time and its timezone. The timezone you select determines when the scheduled send runs.
@@ -45,7 +45,7 @@ Use the campaign list's available actions to edit eligible drafts/scheduled camp
 | No audience is available | Create a list or segment and confirm you are using the intended sending-domain context. |
 | Recipient count is zero or lower than expected | Check list membership, segment conditions, exclusions, consent, and suppressed addresses. |
 | Sender/domain error | Use an active verified domain and a From address belonging to it. |
-| Unsubscribe error | Add the unsubscribe merge tag using the editor; do not replace it with a plain-text promise to unsubscribe. |
+| Unsubscribe error | Go back to **Design Email**, add an **Unsubscribe** block from the Blocks list and save the design. Do not replace it with a plain-text promise to unsubscribe. |
 | Test fails | Confirm the test addresses, saved message content, sender, and domain. Resolve the failure before scheduling. |
 | A scheduled send is late | Check the selected timezone and campaign status. Capture the campaign name and scheduled time for **Get support**. |
 | Sending or failed status persists | Use **Get support** with the campaign name, time, and visible error. Check delivery activity before starting a duplicate send. |

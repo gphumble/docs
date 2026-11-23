@@ -1,0 +1,100 @@
+---
+title: "Seat guests and print seating reports"
+description: "Set up the room's tables, place hosts' tables and single guests, designate seats, and print reports for your event team."
+sidebarTitle: "Seating"
+icon: "chair"
+---
+
+After registrations come in, use the **Room and seating** view to say which table in the room each group and guest sits at. Then print reports for table captains, servers, and the registration desk.
+
+## Before you begin
+
+- The event needs **Offer tables** turned on. See [Offer tables at an event](/events/tables).
+- Adding or changing the room's tables needs permission to edit events. Seating people needs permission to manage registrations.
+- To give each guest a specific seat, turn on **Designate seats** on the table's ticket tier under **Ticketing**. It is a choice per tier, so a head table can have designated seats while other tables do not. Without it, guests are assigned to a table only.
+
+Two different things are called a table here. A **host's table** is a group: a host and their guests. A **room table** is the physical table at the venue. You place hosts' tables at room tables.
+
+## Set up the room
+
+1. Open **Events**, choose the event, open **Tables**, then select **Room and seating**.
+2. To add a run of numbered tables, leave **Several numbered tables** selected. Enter **How many**, the number to start from in **Numbered from**, and **Seats each**. For example, 20 tables of 10 numbered from 1.
+3. To add one table with a name, choose **One named table** and enter the **Table name**, such as Head Table.
+4. Optionally enter an **Area**, such as Ballroom or Patio. It appears on the board and in reports.
+5. Select **Add tables** or **Add table**.
+
+Two tables cannot share a name. If any table in a run would repeat an existing name, none of the run is added.
+
+The summary line shows the room's total seats beside the event's capacity, so you can see if the room holds more than the event allows.
+
+Select **Edit** on a table to rename it, change its seats, or change its area. Select **Remove** to delete it. Anyone seated there returns to **Not seated**.
+
+## Seat people
+
+The left column, **Not seated**, lists hosts' tables and single guests who have no room table yet.
+
+1. Drag a card by its handle onto a room table, or choose a table from the **Seat at** menu on the card.
+2. To move someone, drag them to another table or choose a different table from the menu.
+3. To unseat someone, drag them back to **Not seated** or choose **Not seated** from the menu.
+
+How seats are counted:
+
+- A host's table takes its **whole seat count** at the room table, including seats nobody has claimed yet. This keeps the room from being overbooked while a host is still inviting guests.
+- A room table can hold several hosts' tables and single guests while seats allow.
+- A move that would overfill a table is refused, and a full table is not offered in the menu.
+- Guests of a host cannot be seated one at a time. Move their host's table instead.
+
+Guests who join a host's table later are seated with it automatically.
+
+Once a guest is seated, their table appears on their ticket, in their confirmation email if it is sent afterwards, and on the door scanner, for example **Table 12**. Renaming a room table updates the tickets.
+
+## Designate seats
+
+When a host's table is on a ticket tier with **Designate seats** turned on, the room table it is placed at shows a **Seats** link. Everyone at that room table can be given a seat, including single guests seated there.
+
+1. Select **Seats** on a table.
+2. Select **Fill in order** to give everyone a seat number at once. Each host's group is kept together with the host first, and anyone who already has a seat keeps it.
+3. To place someone yourself, choose their name from the menu beside a seat. If someone else is already in that seat, the two swap.
+4. To take someone out of a seat, choose **Empty** for their seat. They stay at the table.
+5. Select **Clear seats** to remove every seat number at the table.
+
+Seats a host is holding for guests who have not registered yet are counted at the top of the dialog. They have no ticket to number, so assign them a seat after the guest registers.
+
+A guest's ticket then reads, for example, **Table 12, Seat 4**. A guest moved to another table loses their seat number, and a table made smaller drops any seat numbers above its new size.
+
+## Print seating reports
+
+1. On the **Tables** tab, select **Reports**.
+2. Select **Download PDF** or **CSV** for the report you need.
+
+| Report | What it shows | Who it is for |
+| --- | --- | --- |
+| **Seating by table** | Each table with everyone at it, a box to tick as guests arrive, seats held for guests who have not registered, and open seats | Table captains and servers |
+| **Guest lookup** | Every guest by last name, with their table and host | The registration desk |
+| **Not yet seated** | Hosts' tables and single guests with no room table | Whoever is finishing the seating |
+
+Seat numbers appear in the reports only when a table tier at the event designates seats. Guests who have already checked in are ticked on the by-table report.
+
+<Note>
+  Reports are made from what is seated at the moment you download them. Print again after you change the seating.
+</Note>
+
+The reports contain names only. The [registrants export](/events/registrants) also includes each registration's table and host, along with contact details.
+
+## Troubleshooting
+
+**A table will not accept a host's group.** The group needs its whole seat count, not only the seats filled so far. Seat it at a larger table, or reduce the group's seats from the **Hosts and guests** view.
+
+**You cannot reduce a table's seats.** Seats in use cannot be removed. Move people off the table first.
+
+**A table says it no longer has designated seats.** Guests there were given seats earlier, and the option has since been turned off for the tier or the host's table that brought it was moved away. Their seat numbers still show on their tickets. Select **Clear seats** to remove them, or turn **Designate seats** back on for the tier.
+
+**There is no Seats link.** The link appears when a host's table at that room table is on a ticket tier with **Designate seats** turned on, and at least one person is seated there. Turn the option on under **Ticketing** for that tier.
+
+**A guest's ticket shows no table.** Tickets show a table only after the guest, or their host's table, is placed at a room table. A ticket emailed before then does not change, but the ticket page opened from the email link and the door scanner show the current table.
+
+## Related tasks
+
+- [Manage table hosts and guests](/events/table-hosts-and-guests)
+- [Check in event guests](/events/check-in)
+- [Manage event registrations](/events/registrants)
