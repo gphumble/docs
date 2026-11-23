@@ -1,6 +1,6 @@
 ---
 title: "Manage event registrations"
-description: "Find buyers, record walk-ins and past attendance, resend tickets, and export your guest list."
+description: "Find buyers, record walk-ins and past attendance, resend or reassign tickets, and export your guest list."
 ---
 
 A registration records a buyer's order. Tickets are the admissions issued for that order. Open **Events**, choose the event, then open **Registrants**.
@@ -17,7 +17,20 @@ Have an active ticket tier ready before adding a registrant. Table tiers cannot 
 2. Choose a status if needed and select **Refresh** to reload the list.
 3. Open the registration to inspect its tickets and available actions.
 
-Use **Export CSV** for the event's guest list. The export is separate from the visible search results; inspect the downloaded file before sharing it. For events with tables, the export includes a **table** column (where the registration's tickets are seated) and a **host** column (the host of the table the registration belongs to).
+Use **Export CSV** for the event's registrations. The file has one row per registration with its ID, ticket tier, quantity, buyer name, email, phone, status, paid amount, and date created. It ignores your search and status filter; inspect it before sharing. For events with tables, the export also includes a **table** column (where the registration's tickets are seated) and a **host** column (the host of the table the registration belongs to).
+
+## Review incomplete checkouts
+
+People who start a public checkout but don't finish paying aren't registrants. They aren't in the list, the export, or your ticket counts, and no tickets are issued to them. When there are any, a button such as **3 incomplete checkouts** appears above the list. Select it to see each attempt:
+
+| Label | What it means |
+| --- | --- |
+| In progress | Started in the last 30 minutes and may still be paid |
+| Abandoned | Never paid |
+| Declined | The payment was declined; the reason is shown when available |
+| Canceled | The payment was canceled |
+
+The list is read-only and leaves out buyers who later completed a registration for the event. An unpaid checkout holds its seats for 30 minutes; after that they are available to other buyers again.
 
 ## Add a walk-in or historical registration
 
@@ -36,25 +49,51 @@ Tickets are issued when you save. Ticket quantity and admissions are different: 
 
 Open the registration and choose **Resend email** to queue another confirmation for the buyer. A queued email is not proof of delivery; check the address and the recipient's spam folder if it does not arrive.
 
-Use **Reissue** on a ticket when its old QR code must stop working. Read the confirmation first. Reissuing replaces the QR code; resending a confirmation is the appropriate action when someone only needs another copy.
+If every ticket on the order has been reassigned, **Resend email** has nothing to send the buyer. Use **Reissue** on an individual ticket to email its holder instead.
+
+Use **Reissue** on a ticket when its old QR code must stop working. Read the confirmation first. The new ticket is emailed to the holder if they have an email address; otherwise show or print the new QR code from the panel. Resending a confirmation is the appropriate action when someone only needs another copy.
+
+**Reissue** is not available once the event has ended. For an event with no end time, that is midnight at the end of its start day.
+
+## Reassign a ticket to someone else
+
+Reassigning changes who attends on one ticket. The purchase and its gift stay with the original buyer.
+
+<Warning>
+Before the event ends, reassigning a ticket that has not been checked in issues a new ticket. The current QR code stops working immediately, and the new ticket is emailed to the new attendee if they have an email address.
+</Warning>
+
+1. Open the registration and select **Reassign** on the ticket.
+2. Choose how to name the new attendee:
+   - **Type a name** records the name on the ticket without adding a contact. If you enter an email that matches exactly one person on file, they are linked; otherwise they wait in [Event match](/data-management/event-match).
+   - **Existing person** links someone already in your contacts.
+   - **New person** adds them to the buyer's household or as a new contact.
+3. Select **Reassign ticket** and read the result, which says whether an email was sent.
+
+After the event has ended, or when the ticket is already checked in, reassigning only updates your records: the ticket stays the same, nothing is emailed, and an existing check-in counts for the new attendee.
+
+Reminders and thank-yous go to whoever held each ticket when the event ended. A reassigned holder without an email address receives none. A buyer who has reassigned every ticket no longer counts as registered in Queries. To undo a reassignment, reassign the ticket to the buyer with **Existing person**.
+
+## Delete a registration
+
+You can delete a registration that never involved money: a comped registration, a free RSVP, or a $0 ticket, with no payment or gift attached.
+
+<Warning>
+Deleting is permanent. The registration's tickets stop working and any check-ins on it are removed.
+</Warning>
+
+Open the registration, select **Delete registration**, and confirm. A registration with a payment can't be deleted; use [Refund a registration](/events/refund-a-registration) instead. A table host's registration can't be deleted while the table stands; cancel the table first.
 
 ## Registration statuses
 
 | Status | What it means |
 | --- | --- |
-| Pending | Payment has not completed |
-| Paid | The registration is marked paid |
+| Paid | The registration is marked paid. Free registrations also show **Paid**, at $0.00 |
 | Comped | Complimentary admission |
 | Refunded | A refund has been recorded |
 | Cancelled | The registration has been cancelled |
 
 A manually recorded **Paid** registration does not establish that Stripe collected the money. See [Refund a registration](/events/refund-a-registration) for eligibility.
-
-## Delete a registration
-
-You can delete a registration that never involved money: a comped registration, a free RSVP, or a $0 ticket. Open the registration and select **Delete registration**. Its tickets stop working, any check-ins are removed, and it can't be undone.
-
-A registration with a payment can't be deleted. [Refund it](/events/refund-a-registration) instead. A table host's registration can't be deleted while the table stands; cancel the table first.
 
 ## Troubleshooting
 
@@ -62,6 +101,8 @@ A registration with a payment can't be deleted. [Refund it](/events/refund-a-reg
 - **Confirmation cannot be selected or sent:** supply a valid buyer email. Check the registration before creating another order to solve an email problem.
 - **An action is denied:** have your Owner or Super Admin check your event permissions.
 - **The event has ended:** the notice is informational; you can still record a registrant.
+- **Buyer missing from the list:** check the incomplete checkouts; the payment may not have gone through.
+- **The buyer isn't linked to a household yet:** when reassigning to a **New person**, choose **A new contact** instead of the buyer's household.
 - **Buyer missing from giving history:** review [Event match](/data-management/event-match). Do not assume every manual registration creates a gift.
 
 Continue with [Check in guests](/events/check-in) or [Refund a registration](/events/refund-a-registration).

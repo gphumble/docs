@@ -147,6 +147,7 @@
           "data-management/subscriber-match",
           "data-management/gifts-match",
           "data-management/event-match",
+          "data-management/membership-match",
           "data-management/import-preparation"
         ]
       },

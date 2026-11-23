@@ -22,10 +22,41 @@ Memberships must be enabled for your organization. When it is, **Memberships** a
 3. Under **Term & pricing**, choose the term and pricing options that match the membership you offer. Review the available billing choices before setting the price.
 4. Under **Membership rules**, configure the member limit and other available enrollment rules.
 5. Under **Accounting**, select the gift categorization for membership payments.
-6. Under **Renewal reminders**, configure the reminder options and template if used.
-7. Save, then open the tier again to check its settings.
+6. Under **Discount code**, offer a code if you want one. See [Offer a discount code](#offer-a-discount-code).
+7. Under **Renewal reminders**, choose the templates to use. See [Choose renewal reminders](#choose-renewal-reminders).
+8. Choose **Create tier**, then open the tier again to check its settings.
 
 For example, an individual tier may cover one person, while a household tier can allow additional covered members. Keep the tier name and description clear about who is included.
+
+## Offer a discount code
+
+A tier can have one discount code. Supporters enter it on the enrollment form; it's never applied automatically.
+
+1. Open the tier and tick **Offer a discount code on this tier**.
+2. Enter the **Code**: 4–40 letters, numbers, hyphens, or underscores. It isn't case-sensitive.
+3. Choose a **Dollar amount** or a **Percentage** (a whole percent from 1 to 99) and enter the value. Every discounted payment must be at least $0.50.
+4. If the tier accepts several billing schedules, choose which ones the code works with—annual only, for example.
+5. Under **Applies to**, choose one:
+   - **First payment only** — later payments bill at the full tier price.
+   - **Every payment, including renewals** — the discounted rate lasts as long as the membership.
+6. Check the preview of what a member would pay, then save.
+
+<Warning>
+  With **Every payment, including renewals**, members who used the code keep the lower rate even if you later change the code or turn it off. Upgrading the member to another tier ends it.
+</Warning>
+
+For a lifetime tier, the discount comes off the one-time fee. The **Tiers** list shows each active code, and a member's record shows the code they joined with.
+
+## Choose renewal reminders
+
+A tier has two reminder templates because they say different things:
+
+| Template | Who gets it | What it should say |
+| --- | --- | --- |
+| **Offline members — renewal ask** | Members who pay by hand | Their membership ends soon; please renew |
+| **Stripe members — auto-renewal notice** | Members on a Stripe subscription | Their card will be charged automatically |
+
+Both lists show templates in the **Membership renewal** category, and **Days before renewal** (0–90) applies to both. Leaving a template on **— No reminder —** means those members get no reminder. The other template is never sent in its place.
 
 ## Offer a tier to supporters
 
@@ -48,6 +79,6 @@ If Memberships is absent from the sidebar, ask your administrator whether the mo
 
 ## Term length and payment frequency
 
-A tier supports monthly, quarterly, annual, or lifetime terms. A lifetime term is a one-time fee. For other terms, available billing intervals must fit evenly within the term.
+A tier supports monthly, quarterly, annual, or lifetime terms. A lifetime term is a one-time fee: the membership is permanent, is never billed again, and never renews. For other terms, available billing intervals must fit evenly within the term.
 
 For example, an annual tier priced at $120 can offer monthly billing at $10 per period or annual billing at $120. Review the calculated per-period amounts before saving. If the term price cannot be divided into whole cents for a selected interval, adjust the price or billing choice.

@@ -1,6 +1,6 @@
 ---
 title: "Act on selected query results"
-description: "Select the intended records and apply actions appropriate to contacts or individuals."
+description: "Select the intended records and apply actions appropriate to contacts, individuals, or gifts."
 ---
 
 Run a [query](/queries/build-a-query), review its results, then select the records you want to change. The toolbar shows the selected count.
@@ -20,13 +20,24 @@ Do not assume selecting the page automatically selects all query results. Read t
 | --- | --- |
 | Contacts | Add Tags, Remove Tags, Add Note, Delete |
 | Individuals | Add to Email List, Remove from Email List, Add to Collections, Remove from Collections, Opt In, Opt Out, Delete |
-| Gifts | The contact/individual bulk editing and deletion actions are not offered |
+| Gifts | Assign Categories (bulk deletion is not offered) |
 
 Choose the action, complete its dialog, review the scope, and confirm. Check the result or rerun the query afterward: a change can mean a record no longer matches the original conditions.
 
 <Warning>
 Delete is irreversible and may be refused for protected records. Read the dialog before proceeding. Updating opt-in status should reflect the person's actual communication choice; list membership alone does not establish consent.
 </Warning>
+
+## Change gift categories
+
+You need permission to edit gifts.
+
+1. Run the query in **Gifts** mode and select the gifts. Select the page with the checkbox in the table header, then use the offered **Select all** link to include every gift the query returned.
+2. Choose **Assign Categories**.
+3. Set any combination of **Designation**, **Gift account**, **Project**, and **Sub-project**. A category left on **Leave unchanged** keeps each gift's current value; **Clear** removes it. Choose a project before choosing a sub-project. Changing or clearing the project clears a sub-project that no longer belongs to it.
+4. Check the gift count on the **Update** button, then choose it.
+
+This changes how existing gifts are categorized in your reports. It doesn't charge or refund anyone.
 
 ## Troubleshooting
 

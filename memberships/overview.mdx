@@ -23,6 +23,8 @@ Three words do a lot of work here, and they don't mean the same thing.
 
 So a household of four on a Family tier is one membership and four members. Reports that count memberships and reports that count members will give you different numbers, and both are right.
 
+A household is meant to hold one live membership at a time. Adding a new one closes the household's earlier membership, except one that still bills through Stripe. See [When a household already has a membership](/memberships/manage-members#when-a-household-already-has-a-membership).
+
 ## What each screen does
 
 <CardGroup cols={2}>
@@ -58,9 +60,15 @@ A tier on its own doesn't appear anywhere public and doesn't charge anyone. It h
 
 ## Reading the numbers on the Overview
 
-The renewal pipeline counts memberships whose term ends inside the next 30, 60, or 90 days. Click any of them to open that list in Members.
+The renewal pipeline counts memberships whose term ends inside the next 30, 60, or 90 days. Click any of them to open that list in Members. The dashboard's **Renewals ahead** card shows the same counts, and its **Export CSV** downloads the next 90 days.
+
+**Covered members** counts people, not enrollments: someone covered by two active memberships is counted once. The **individual members** figure on the dashboard's **Memberships** card is the same number.
 
 Lifetime memberships never appear there—they have no term end and never renew. Memberships paid by card renew themselves, and complimentary ones have nothing to collect, so the renewals that actually need a person are the offline ones.
+
+## Sign-ups that need a second look
+
+Advocora attaches an online sign-up to a contact by email. When that attachment is uncertain—the email belongs to someone with a different name, or a new household was created for a name you already have—the sign-up also waits in [Membership Match](/data-management/membership-match) so someone can confirm it or move it to the right contact. The supporter's membership and payment aren't held up by the review.
 
 ## Memberships that cover several people
 

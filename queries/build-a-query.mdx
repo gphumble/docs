@@ -42,7 +42,27 @@ Choose Individuals for email-list actions and Contacts for household-level tags 
 
 ## The kinds of filters
 
-Fields span contact info, the people in a household, contact methods (email/phone and opt-in status), addresses (down to congressional district), tags, and giving. Operators adapt to the field—text supports _contains_ and _starts with_; numbers and currency support _greater than_ and _between_; dates support _in the last N days_; tags support _has tag_ and _doesn't have tag_.
+Fields span contact info, the people in a household, contact methods (email/phone and opt-in status), addresses (down to congressional district), tags, giving, memberships, and events. Operators adapt to the field—text supports _contains_ and _starts with_; numbers and currency support _greater than_ and _between_; dates support _in the last N days_; tags support _has tag_ and _doesn't have tag_.
+
+### Event and membership gifts
+
+Gifts recorded by the Events module (tickets, merchandise, auction wins, sponsorships) and gifts that paid for a membership carry extra fields you can filter on in any result mode:
+
+- **Is Event Gift** / **Event (Gift)** / **Event Gift Type** — under the **Events** category. Types are _Ticket_, _Merchandise_, _Auction win_, and _Sponsorship_; imported event gifts with no type are _Unspecified (imported)_.
+- **Is Membership Gift** / **Membership Gift Tier** — under the **Memberships** category.
+
+In **Gifts** mode these filter the transactions themselves (for example, every ticket gift for the Fall Gala). In **Contacts** or **Individuals** mode they find the people who have such a gift.
+
+### Event registration and attendance
+
+These fields are in the **Events** category, in **Contacts** and **Individuals** modes:
+
+- **Registered for an Event (purchaser)** and **Registered for Event (purchaser)** find people who bought a registration. They include buyers whose registration was never matched to a contact, by using the email given at checkout.
+- **Attending an Event (incl. guests)** and **Attending Event (incl. guests)** also find people named as guests on someone else's registration.
+
+<Note>
+  A guest counts only after being matched to a person. Clear the **Guests** tab in [Event match](/data-management/event-match) before relying on attendance results.
+</Note>
 
 ## Saved queries
 
