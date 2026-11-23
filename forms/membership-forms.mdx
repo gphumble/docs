@@ -11,6 +11,12 @@ Membership forms—called **Enrollment forms** in the app—let supporters join 
   Memberships is an optional module. If you don't see **Memberships** in the sidebar, it isn't enabled for your organization. You'll also need at least one membership tier set up first.
 </Note>
 
+## What members fill in
+
+The public enrollment page asks for the member's **first name**, **last name**, and **email**, plus a required **mailing address** (street, city, state, ZIP) — the same fields a donation form requires. The address is saved as the contact's primary mailing address. Forms with political-compliance fields turned on also require **employer** and **occupation**.
+
+If the chosen tier covers more than one person, the supporter must name at least one other person before they can pay. If the tier and billing schedule accept a [discount code](/settings/memberships#offer-a-discount-code), the form shows **Have a discount code?** and, once a valid code is applied, what they'll pay today and afterwards.
+
 ## Before you build
 
 Set up your **tiers** first under **Memberships → Tiers**. A tier is a membership product—"Individual," "Family," "Gold"—with a price, billing interval, and optional member limit. See [Membership tiers](/settings/memberships).
@@ -27,11 +33,11 @@ Choose **\+ New form** under **Memberships → Enrollment forms**, then pick the
 | **Membership** | One supporter's enrollment in a tier |
 | **Member** | An individual covered by a membership (a Family membership can cover several) |
 
-When a tier covers more than one person, the form says so and asks the supporter to name the others while they sign up. See [Couple and family memberships](/memberships/couples-and-families).
+When a tier covers more than one person, the form says so and requires the supporter to name at least one other person from their household. See [Couple and family memberships](/memberships/couples-and-families).
 
 ## Receipts and renewals
 
-Membership forms send a **Membership Receipt** on signup and on each renewal, and can send a **Membership Renewal Reminder** before a term ends. Set those up as [transactional templates](/email/templates).
+Membership forms send a **Membership Receipt** on signup and on each renewal, and each tier can send a **Membership Renewal Reminder** before a term ends, with [separate templates](/settings/memberships#choose-renewal-reminders) for offline and Stripe members. Set those up as [transactional templates](/email/templates).
 
 <Warning>
   Like donation forms, membership forms need a ready Stripe Connect account to take payment. See [Payments](/settings/payments).
@@ -41,10 +47,10 @@ Membership forms send a **Membership Receipt** on signup and on each renewal, an
 
 1. Enter the form name, select the Connect account, and keep the form in Draft while preparing it.
 2. Select the tiers to offer and put them in the desired order. At least one tier is required for publication.
-3. Review fee-coverage and employer/occupation options, branding, logo, background, thank-you text, and the receipt template.
+3. Review the employer/occupation option, branding, logo, background, thank-you text, and the receipt template.
 4. Add allowed embed origins if you will use the form on another website.
 5. Save, set Published, save again, and inspect the copied public link while signed out.
 
 ## Verify an enrollment
 
-Check the selected tier, payment schedule, primary individual, covered members, and receipt separately. If payment or matching needs attention, investigate the existing enrollment before creating another. For manual entry, see [Manage memberships](/memberships/manage-members).
+Check the selected tier, payment schedule, primary individual, covered members, and receipt separately. If payment needs attention, investigate the existing enrollment before creating another. A sign-up whose contact match is uncertain also appears in [Membership Match](/data-management/membership-match). For manual entry, see [Manage memberships](/memberships/manage-members).

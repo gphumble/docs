@@ -37,13 +37,13 @@ To send one, choose **Send reminder** on the row. To send several, tick the rows
   These are real emails to your members. Read the confirmation before accepting it—particularly the count of people who have already had a reminder for this term.
 </Warning>
 
-If **Send reminder** is greyed out, the membership's tier has no renewal reminder template. Set one under **Memberships → Tiers**, in the tier's **Renewal reminders** section, and pick a [transactional template](/email/templates).
+If **Send reminder** is greyed out, the tier has no **Offline members — renewal ask** template. Set one under **Memberships → Tiers**, in the tier's **Renewal reminders** section. See [Choose renewal reminders](/settings/memberships#choose-renewal-reminders).
 
-Advocora also sends these reminders automatically, once a day, to anyone inside their tier's reminder window who hasn't been reminded for the current term. Sending by hand is for the ones you want to chase sooner.
+Advocora also sends reminders automatically, once a day, to members inside their tier's reminder window who haven't been reminded for the current term. Offline members get the tier's offline template. Members on Stripe get its separate auto-renewal notice. If the matching template isn't set, those members get no reminder; the other template is never used in its place. Complimentary members get none. Sending by hand is for the ones you want to chase sooner.
 
 ## Recording a payment
 
-When an offline member pays, choose **Record payment** on their row. Enter the amount, the date it arrived, and any note. Advocora books the gift against the membership and moves the term end forward by a full term, so the row leaves the list straight away.
+When an offline member pays, choose **Record payment** on their row. Enter the amount, the date it arrived, how it was paid (with a check number for a **Check**), and any note. Advocora books the gift against the membership and moves the term end forward by a full term. If it's the first payment on the membership, the term stays where it is: see [Record a payment that arrived offline](/memberships/manage-members#record-a-payment-that-arrived-offline).
 
 The amount is pre-filled with the tier's full term price, because recording a renewal buys another whole term. If the member paid something different—a partial payment, or a price you agreed with them—change it before saving.
 
@@ -51,11 +51,11 @@ You can also do this from the membership itself, on its **Billing & renewals** t
 
 ## Exporting
 
-**Export CSV** downloads exactly what's on screen, filters and all—member, email, phone, tier, how many people it covers, renewal date, amount, status, payment method, and when the last reminder went out. Useful for a phone list or a mail-merge.
+**Export CSV** downloads exactly what's on screen, filters and all—member, email, phone, tier, how many people it covers, renewal date, amount, status, payment method, and when the last reminder went out. Useful for a phone list or a mail-merge. The dashboard's **Renewals ahead** card has its own **Export CSV** for the next 90 days.
 
 ## Troubleshooting
 
 - **A membership you expected isn't listed.** Check the window, the filters, and whether its term has already passed (try **Overdue**). Lifetime memberships never appear.
-- **The reminder didn't arrive.** Confirm the primary member has an email address, that the tier has a reminder template, and check your [sending domain](/settings/sending-domains).
+- **The reminder didn't arrive.** Confirm the primary member has an email address, that the tier has the reminder template matching how they pay, and check your [sending domain](/settings/sending-domains).
 - **Someone renewed but is still listed.** The payment may not be recorded against the membership yet. Open it and check **Billing & renewals**.
 - **A membership lapsed that shouldn't have.** Offline and complimentary memberships lapse automatically once their term end passes. Record the payment, or extend the term.
