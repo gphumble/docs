@@ -17,13 +17,13 @@ To send email from your own address, your organization verifies a **sending doma
     Advocora gives you DNS records to add at your domain registrar—DKIM, return-path, and DMARC.
   </Step>
   <Step title="Verify">
-    Choose **Verify**. Once the records are found, the domain becomes **Active** and the DKIM / Return / DMARC checks show green.
+    Choose **Verify**. Once the records are found, the domain's status changes to **Verified** and the DKIM / Return / DMARC checks show green.
   </Step>
 </Steps>
 
 ## The domains table
 
-Each domain shows its status (**unverified**, **pending**, or **active**), the from email, and the state of its three DNS checks. Choose **Set Default** to make one the default sender, and use the settings icon to adjust a domain.
+Each domain shows its status (**Unverified**, **Pending**, or **Verified**), the from email, and the state of its three DNS checks. Choose **Set Default** to make one the default sender, and use the settings icon to adjust a domain.
 
 <Frame caption="The right side of the domains table: (1) Add Domain, (2) the DKIM, Return, and DMARC checks, (3) Set Default, (4) the settings icon.">
   ![The Add Domain button above a domain's row, which shows its three DNS checks passing, a Set Default button and a settings icon](/images/settings/sending-domains-table.png)
@@ -43,4 +43,4 @@ Choose the verified domain in the email area and use a From address on that doma
 
 ## When verification does not pass
 
-Compare each DNS record with the exact host and value Advocora displays. Check that the record was added at the provider that manages your domain's DNS. Keep existing email records unless your domain administrator has confirmed a change is appropriate. If a check stays unresolved, send the displayed check and domain name to your domain administrator or **Get support**.
+Compare each DNS record with the exact host and value Advocora displays. Check that the record was added at the provider that manages your domain's DNS. Keep existing email records unless your domain administrator has confirmed a change is appropriate. If a check stays unresolved, send the displayed check and domain name to your domain administrator, or choose **Support** in your avatar menu.
