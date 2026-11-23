@@ -144,6 +144,7 @@
           "data-management/subscriber-match",
           "data-management/gifts-match",
           "data-management/event-match",
+          "data-management/membership-match",
           "data-management/import-preparation"
         ]
       },
@@ -154,6 +155,7 @@
           "settings/overview",
           "settings/organization",
           "settings/team-and-roles",
+          "settings/billing",
           "settings/payments",
           "settings/sending-domains",
           "settings/integrations"

@@ -52,7 +52,7 @@ Transactional templates are used when a matching workflow is configured to use t
 Templates appear as cards showing a preview, status badge, and category. From each card you can **Edit**, **Duplicate**, **Archive**, or **Delete**. Filter by category or tick **Show archived** to see hidden ones.
 
 <Note>
-  Templates start as **Draft** and become **Published** once saved from the builder. Published templates are the ones you can pick in the campaign wizard.
+  Templates start as **Draft** and become **Published** once saved from the builder. Published templates are the ones you can pick in the campaign wizard. A template cannot be published without an **Unsubscribe** block, unless it is a transactional template such as a receipt or reminder. If you try, a message at the top of the builder tells you to add the block. The same applies if you remove the block from a template that is already published.
 </Note>
 
 <Tip>
@@ -63,7 +63,7 @@ Templates appear as cards showing a preview, status badge, and category. From ea
 
 1. Open **Marketing → Email Templates**, create or edit a template, and enter the builder.
 2. Add the needed content blocks and edit their text, links, images, and styling.
-3. Insert personalization through the merge-tag controls so you use supported fields. Campaign messages need an unsubscribe link.
+3. Insert personalization through the merge-tag controls so you use supported fields. Campaign messages need an **Unsubscribe** block.
 4. Review desktop and mobile previews, then save. Check the saved status before selecting the template in a campaign or form.
 5. Assign transactional templates to the form, gift account, or membership workflow that should use them. Creating a template alone does not enable an automatic email.
 6. Test through the intended workflow using a controlled recipient.

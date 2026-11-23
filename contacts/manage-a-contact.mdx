@@ -9,7 +9,7 @@ Open any contact to manage everything about your relationship with them. This pa
 
 ## Edit contact details
 
-Click **Edit Contact** to update the contact's name and address. When you change an address, you can look up the county and legislative districts again so they stay accurate.
+Click **Edit Contact** to update the contact's name, address, and any custom fields. When you change the address, choose one of the suggestions. Advocora looks up the county and legislative districts when you save.
 
 ## Manage people (households)
 
@@ -23,9 +23,21 @@ For households, the **People** section lists everyone in the contact.
 
 Each person can have multiple emails and phone numbers. For each, you can mark one **Primary** of its kind and toggle **Opted in** to track communication consent. Opt-in status matters for email—contacts who aren't opted in won't receive campaigns.
 
+When someone has an opted-in email, one address carries a **Broadcast** label. That's the address your campaigns go to. Advocora chooses it automatically: the primary email if it's opted in, otherwise the first opted-in email on file. If the person opts out of that address, **Broadcast** moves to another opted-in address, or disappears when none is left. You don't set it by hand, and it doesn't change where gift receipts and other automatic emails are sent.
+
 ## Address, county, and districts
 
 The **Contact info** section shows the mailing address and, when available, the county and congressional/state house/state senate districts. If the address has been geocoded, you can open a map to see the district boundaries.
+
+<Note>
+District information can be turned off for an organization that doesn't work with districts. When it's off, **Contact info** shows the address and county only, and the address doesn't open the district map. Use **Get support** to ask for it to be turned on or off.
+</Note>
+
+District lines change after a redistricting. Advocora can refresh the stored districts for a whole state, so a contact's districts, and the queries, segments, and reports that use them, can change without anyone editing the contact. On the map, the congressional boundary names the Congress it belongs to, such as **120th Congress**. For a time the map can show a newer boundary than the district saved on the contact.
+
+## Custom fields
+
+If your organization has active [custom fields](/data-management/lookup-tables), their values appear in the **Custom fields** card on the profile. Click **Edit** on the card, or **Edit Contact**, to change them. They belong to the contact as a whole, not to each person in a household.
 
 ## Tags
 
@@ -33,7 +45,22 @@ Tags help you group and segment contacts. In the **Tags** section, click **Edit*
 
 ## Notes
 
-Use **Notes** to capture context—call summaries, preferences, relationship history. Click **Add Note** to create one. Notes appear newest-first. You can edit or delete a note you created.
+Use **Notes** to capture context—call summaries, preferences, relationship history. Type your note in the **Notes** section and click **Save note**. Notes appear newest-first. You can edit or delete a note you created.
+
+### Attach files to a note
+
+To keep a scanned letter, a pledge card, or a photo with a note, click **Attach files** before you save it and choose one or more files. A note needs some text before you can save it with files. Each file is listed under the note. Click a file to view it without leaving the page, or click the download arrow next to it to save a copy.
+
+- You can attach images (JPG, PNG, GIF, WebP, HEIC), PDFs, Word, Excel and PowerPoint files, CSV, and text files.
+- Images, PDFs, and plain text and CSV files open in the viewer. Word, Excel, PowerPoint, RTF, and HEIC files, and text files over 512 KB, can't be shown there; download them to open them.
+- Each file can be up to 8 MB, and a note can have up to 10 files.
+- To add or remove files later, click the pencil icon on a note you created. Deleting a note deletes its files too.
+
+Anyone on your team who can view the contact can open a note's files. Files are private to your organization and can't be opened by a link from outside Advocora.
+
+## Event attendance
+
+When someone in the contact came to an event as a guest on another person's registration, and the guest has been matched to them, the activity timeline shows that they attended as a guest. See [Event match](/data-management/event-match).
 
 ## Record a gift
 

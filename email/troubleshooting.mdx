@@ -9,7 +9,7 @@ Begin by identifying the message: a campaign, a gift receipt, a form confirmatio
 
 1. Open the campaign and read its visible error/status.
 2. Confirm the From address belongs to the selected active, verified [sending domain](/settings/sending-domains).
-3. Check that the content includes the unsubscribe merge tag and the audience has eligible recipients.
+3. Check that the design includes an **Unsubscribe** block and the audience has eligible recipients.
 4. Confirm your role allows sending.
 5. Send a controlled test after correcting the setup.
 
@@ -28,6 +28,8 @@ Adding a person to a list does not override suppression. Do not repeatedly resen
 Check the template selected on the form, gift account, or event. Confirm the triggering action actually completed. Manual event registration confirmation is off by default and must be selected explicitly.
 
 If the gift or registration exists, correct the email setup and use its supported resend action where available. Creating another gift, payment, or registration to trigger an email can duplicate records or charges.
+
+A gift receipt goes to the donor recorded on the gift. When a gift has no specific donor, as with some imported or older gifts, it goes to the contact's primary individual, or to another individual on the contact when no one is marked primary. Advocora uses that person's primary email address if there is one, and otherwise another email address on their record. Confirm that person has an email address before looking for another cause.
 
 ## A scheduled campaign has not finished
 

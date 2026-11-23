@@ -5,15 +5,17 @@ sidebarTitle: "Event match"
 icon: "calendar-check"
 ---
 
-When someone buys a ticket or wins an auction lot through a public event page but their email doesn't match an existing contact, the record lands in **Event match**. Their ticket and confirmation already went out—this step links them to a contact and records the gift.
+When someone buys a ticket or wins an auction lot through a public event page but their email doesn't match an existing contact, the record lands in **Event match**, on the **Registrations** tab. Their ticket and confirmation already went out—this step links them to a contact and records the gift. The **Guests** tab is for the other people named on a registration.
 
 <Note>
-  Event match appears only when the Events module is enabled.
+  Event match appears only when the Events module is enabled, and you need permission to manage event registrations.
 </Note>
 
-## What you'll see
+## What you'll see on Registrations
 
 Each unmatched record shows when it happened, whether it's a **Ticket** or an **Auction win**, the amount, the buyer's name and email, and the event (or lot). Filter by event if you have several.
+
+Auction winners enter their name when they enroll to bid, so a win normally arrives with a name. A win with no name recorded shows only an email.
 
 ## Reconciling a record
 
@@ -22,7 +24,7 @@ Each unmatched record shows when it happened, whether it's a **Ticket** or an **
     Choose **Match** on a row.
   </Step>
   <Step title="Pick the contact">
-    Choose a suggested candidate (matched on email or name), or **create a new contact** — buyer details pre-fill the new record.
+    Choose a suggested candidate (matched on email, phone, or name). If nothing is suggested, or the suggestion is wrong, type at least two characters in the **search box** above the candidates to find the contact yourself by name, email, phone, or address. Otherwise **create a new contact** — buyer details pre-fill the new record.
   </Step>
   <Step title="Optionally save the address">
     If an address was captured at purchase, tick to save it to the contact. It becomes primary only if the contact has no primary address yet.
@@ -35,6 +37,29 @@ Each unmatched record shows when it happened, whether it's a **Ticket** or an **
 <Warning>
   **Skip this registration** marks it resolved without creating a gift, and can't be undone. The attendee keeps their ticket either way—skipping only affects your giving records.
 </Warning>
+
+## Match event guests
+
+When one person registers several people, the additional attendees are guests. A guest whose email exactly matches one person in your records is linked automatically. Everyone else waits on the **Guests** tab, even when their name matches someone, because two people can share a name. Guests paid nothing, so matching one never creates a gift.
+
+<Steps>
+  <Step title="Open a guest">
+    Open the **Guests** tab, filter by event if you need to, and choose **Match**.
+  </Step>
+  <Step title="Choose who they are">
+    - **Add to** the buyer's household creates the person in that household. It's unavailable until the buyer is linked to a contact on the **Registrations** tab.
+    - **Create as a new contact** creates a new household for them.
+    - **Link to an existing person** lists likely people. Use the search box to find someone by name, email, phone, or address.
+    - **Skip — not a real person** is for duplicates and placeholders.
+  </Step>
+  <Step title="Save">
+    Correct the name if needed, add an optional note, and choose **Save match** (or **Skip guest**).
+  </Step>
+</Steps>
+
+Check any person Advocora has already selected for you before saving. Once matched, the guest's attendance appears on their contact's activity timeline and counts in the **Attending** fields in [Queries](/queries/build-a-query). If the matched person is later deleted, the guest returns to this tab. A skipped guest does not.
+
+Only guests on paid or comped registrations are listed. Refunded registrations are left out.
 
 ## Verify the reconciliation
 
