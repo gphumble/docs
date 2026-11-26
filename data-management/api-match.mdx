@@ -1,0 +1,69 @@
+---
+title: "Review contacts sent by a connected system"
+description: "Decide whether a contact sent through the API is someone already in your records or someone new."
+sidebarTitle: "API match"
+icon: "plug-circle-check"
+---
+
+When a connected system, such as your accounting software, sends a contact that might already be in Advocora, nothing is added. The contact waits in **API match** until you decide whether it's an existing contact or someone new. The connected system is then told the answer.
+
+A contact that clearly matches nobody is added straight away, and one that clearly matches a single existing contact is linked to it. Neither is listed here.
+
+## Before you begin
+
+- **API Match** appears under **Data Management** only when the API is included in your organization's plan.
+- You need permission to edit contacts.
+- Nothing is created or linked until you choose. There's no deadline, but the connected system keeps waiting for the answer.
+
+## Why a contact is listed
+
+The **Why it needs review** column gives the reason. A contact is held when:
+
+- its email belongs to a contact in your records under a different name;
+- a contact with the same name already exists, with no email in common;
+- a contact with the same name and address exists, with no email in common;
+- another contact is at the same street address; or
+- more than one existing contact shares an email, a name, or an address with it.
+
+The list also shows when it was **Received**, the name it was **Sent as**, and which connected system it came **From**.
+
+## Review a contact
+
+1. Open **Data Management → API Match** and select a row.
+2. Under **Is it one of these?**, compare what was sent with the suggested contacts. To look for someone who isn't suggested, search by name, email, phone, or address.
+3. Choose what to do:
+   - **Link to selected** — it's the existing contact you selected. Nothing is created.
+   - **Create new contact** — it's someone new. A new contact is added with the details that were sent.
+   - **Dismiss** — don't add it. The connected system is told not to add this record, and it isn't sent for review again.
+
+When you link, you can also add the emails, phones, and address that were sent, where the contact doesn't already have them. Each person's emails and phones go to the person with the same name. Nothing the contact already has is replaced.
+
+<Note>
+Emails and phone numbers that arrive this way are added as not opted in. Linking or creating a contact here never subscribes anyone to email.
+</Note>
+
+A suggested contact marked **Already linked to** another record in the connected system is probably a different person there. Check before you link a second record to it.
+
+## Check the result
+
+- The row leaves the list.
+- If you linked or created, open the contact and confirm the details. The connected system receives the contact's Advocora id.
+- If you dismissed, nothing changes in your records.
+
+## Troubleshooting
+
+| Problem | What to do |
+| --- | --- |
+| **API Match** isn't in Data Management | The API isn't included in your plan. |
+| **You do not have permission to review these** | Ask an administrator for permission to edit contacts. |
+| The right contact isn't suggested | Use the search box. If the person isn't in your records, choose **Create new contact**. |
+| The suggested contacts no longer exist | They were deleted or merged since the contact was sent. Search, or choose **Create new contact**. |
+| You linked to the wrong contact | Choose **Support** in your avatar menu and include both contact names. |
+| You created a contact that turns out to be a duplicate | [Merge the duplicate contacts](/data-management/contact-merge). The connected system is told which contact remains. |
+| The same contacts keep arriving for review | The connected system is sending records that resemble existing contacts without enough detail to match. Ask your developer to send the email and address with each one. |
+
+## Related tasks
+
+- [Connect another system with the API](/settings/api)
+- [Merge duplicate contacts](/data-management/contact-merge)
+- [Subscriber match](/data-management/subscriber-match)
