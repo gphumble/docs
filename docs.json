@@ -148,6 +148,7 @@
           "data-management/gifts-match",
           "data-management/event-match",
           "data-management/membership-match",
+          "data-management/api-match",
           "data-management/import-preparation"
         ]
       },
@@ -161,7 +162,8 @@
           "settings/billing",
           "settings/payments",
           "settings/sending-domains",
-          "settings/integrations"
+          "settings/integrations",
+          "settings/api"
         ]
       },
       {

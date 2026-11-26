@@ -1,0 +1,120 @@
+---
+title: "Connect another system with the API"
+description: "Turn on API access, create and revoke API keys, and add webhooks so another system can work with your Advocora data."
+sidebarTitle: "API"
+icon: "key"
+---
+
+The API lets another system, such as your accounting software or a data warehouse, read and change your Advocora records without anyone signing in. You control it from **Settings → API**: one switch for the whole organization, a key for each connected system, and webhooks that tell a system when something changes.
+
+This page is for the administrator who manages the connection. The person building it works from the developer guide linked under **For your developer** on the same page.
+
+## Before you begin
+
+- **API** appears under **Developers** in Settings only when the API is included in your organization's plan. If you don't see it, choose **Support** in your avatar menu.
+- Only an **Owner** or **Super admin** can open the page.
+- Know which system the key is for and what it needs to do. Ask your developer which permissions it needs. Give it no more than that.
+
+<Warning>
+An API key works like a password to your donor data. Anyone who holds it can do everything its permissions allow, from anywhere, until you revoke it. Share a key only with a system you trust, and never by email or chat.
+</Warning>
+
+## Turn API access on
+
+1. Open **Settings → API**.
+2. Turn on **API access**.
+
+While access is off, no key can reach your data, including keys that already exist. Turning it off later stops every key at once without revoking any of them, and turning it back on restores them. Use it as the quick stop if something looks wrong.
+
+## Create an API key
+
+Make one key for each system you connect, so you can revoke one without interrupting the others.
+
+1. Choose **Create key**.
+2. Enter a **Name**. Name it after the system that will use it, for example "QuickBooks sync".
+3. Under **Permissions**, select what the system may do.
+4. Optionally set an expiry date. Leave it blank for a key that works until you revoke it. A key with a date works through the end of that day.
+5. Tick the confirmation that you understand the key gives access to your organization's donor data and that you're authorized to share it.
+6. Choose **Create key**.
+7. In **Copy your key now**, choose **Copy** and store the key in the other system's settings or in a password manager. Then choose **I have saved the key**.
+
+<Warning>
+The key is shown only this once. Advocora doesn't keep a copy. If it's lost, create a new key and revoke the old one.
+</Warning>
+
+### Permissions
+
+| Permission | What it allows |
+| --- | --- |
+| **Read contacts** | Contacts with their people, emails, phones, addresses, tags, and custom fields. |
+| **Read gifts** | Gifts, recurring gifts, and your account, designation, and project lists. |
+| **Read email lists** | Your email lists, who is subscribed to each, and when people subscribe or unsubscribe. |
+| **Read events** | Events, their ticket types, and who registered. Offered only if your organization uses Events. |
+| **Read memberships** | Membership tiers, memberships, and their members. Offered only if your organization uses Memberships. |
+| **Create and update contacts** | Add contacts and change their details. |
+| **Create and update gifts** | Record gifts and correct them. |
+| **Manage webhooks** | Lets the connected system add and remove its own webhooks. |
+
+Permissions can't be changed after a key is created. To change them, create a new key and revoke the old one. A permission to change records doesn't include the matching permission to read them, so a system that does both needs both.
+
+What a connected system can and can't do, whatever its permissions:
+
+- A contact it sends that might already be in your records isn't added automatically. It waits for your decision in [API match](/data-management/api-match).
+- An email or phone number it adds is never marked as opted in.
+- A gift it records never sends a receipt to the donor.
+
+## Review and revoke keys
+
+The key list shows each key's **Name**, **Permissions**, **Created**, **Last used**, **Expires**, and **Status** (**Active**, **Revoked**, or **Expired**). Only the last few characters of a key are ever shown again.
+
+To stop a key, choose **Revoke** on its row and confirm with **Revoke key**. The key stops working on its next request, and whatever uses it starts getting errors. This can't be undone. To reconnect that system, create a new key. Webhooks that the key added itself stop as well.
+
+Revoke a key when a system is retired, when someone who had the key leaves, or as soon as you suspect it was exposed.
+
+## Add a webhook
+
+A webhook is an address that Advocora tells when something changes, so a connected system doesn't have to keep asking. Your developer gives you the address. A connected system whose key has **Manage webhooks** can also add its own.
+
+1. Under **Webhooks**, choose **Add webhook**.
+2. Enter the address. It must start with `https` and be reachable from the internet.
+3. Optionally enter **What it is for**.
+4. Under **Send when**, select the changes this address should hear about. Changes to events and memberships are offered only if your organization uses those modules.
+5. Choose **Add webhook**. Advocora sends a test to the address straight away.
+6. In the dialog that follows, copy the signing secret and give it to your developer through a password manager. Then choose **I have saved the secret**.
+
+The receiving system uses the signing secret to check that a delivery really came from Advocora. Like a key, it's shown only once.
+
+### Manage a webhook
+
+| Action | What it does |
+| --- | --- |
+| **Send test** | Sends a test to the address within a few seconds. |
+| **Deliveries** | Shows what was sent recently and how the address answered. Choose **Send again** to repeat a delivery. |
+| **Turn off** / **Turn on** | Pauses or resumes the webhook without removing it. |
+| **Replace secret** | Issues a new signing secret. Deliveries are signed with it straight away, so the receiving system rejects them until your developer updates it. |
+| **Remove** | After you confirm with **Remove webhook**, stops the webhook and removes its delivery history. This can't be undone. |
+
+## Check the result
+
+- Ask your developer to make their first request. The key's **Last used** fills in once it has been used.
+- After you add a webhook, open **Deliveries** and confirm the test was accepted.
+- A change is sent about a minute after it happens. Several quick changes to the same record arrive as one.
+
+## Troubleshooting
+
+| Problem | What to do |
+| --- | --- |
+| **API** isn't in Settings | The API isn't included in your plan, or you aren't an Owner or Super admin. |
+| The connected system gets errors with a key that used to work | Check that **API access** is on and that the key's status is **Active**, not **Revoked** or **Expired**. |
+| A permission you need isn't offered | **Read events** and **Read memberships** appear only if your organization uses those modules. |
+| A webhook shows that it stopped after repeated failed deliveries | The address didn't answer for about a day. Ask your developer to fix the receiving system, then choose **Turn on**. |
+| A webhook stopped because its API key was revoked | A webhook added by a connected system depends on that system's key. Create a new key and have the system add the webhook again, or add it here yourself. |
+| Deliveries are rejected after **Replace secret** | Give the new signing secret to your developer. Rejected deliveries are tried again. |
+| The key or signing secret was lost | Neither can be shown again. Create a new key and revoke the old one, or use **Replace secret**. |
+| You think a key was exposed | Turn **API access** off or revoke the key straight away, then choose **Support** in your avatar menu. Include the key's name, not the key. |
+
+## Related tasks
+
+- [Review contacts sent by a connected system](/data-management/api-match)
+- [Team & access](/settings/team-and-roles)
+- [Integrations](/settings/integrations)
